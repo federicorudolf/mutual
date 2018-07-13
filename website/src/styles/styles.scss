@@ -1,0 +1,24 @@
+/*
+|--------------------------------------------------------------------------
+| Global settings, resets & imports
+|--------------------------------------------------------------------------
+*/
+
+@import 'imports/colors';
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+a,
+button,
+input,
+select,
+textarea,
+form,
+[contenteditable] {
+    &:focus {
+        outline: none;
+    }
+}
