@@ -8,12 +8,37 @@ const store = new Vuex.Store({
     offers: [
       {
         id: '',
-        image: '',
-        title: '',
-        description: '',
-        location: '',
-        rubro: '',
-      }],
+        imgSrc: 'https://picsum.photos/300/300/?image=41',
+        title: 'Card title',
+        description: 'This is a card description',
+        location: 'Bahía Blanca',
+        field: 'Food',
+      },
+      {
+        id: '',
+        imgSrc: 'https://picsum.photos/300/300/?image=41',
+        title: 'Card title',
+        description: 'This is a card description',
+        location: 'Bahía Blanca',
+        field: 'Food',
+      },
+      {
+        id: '',
+        imgSrc: 'https://picsum.photos/300/300/?image=41',
+        title: 'Card title',
+        description: 'This is a card description',
+        location: 'Bahía Blanca',
+        field: 'Food',
+      },
+      {
+        id: '',
+        imgSrc: 'https://picsum.photos/300/300/?image=41',
+        title: 'Card title',
+        description: 'This is a card description',
+        location: 'Bahía Blanca',
+        field: 'Food',
+      },
+    ],
   },
 });
 
