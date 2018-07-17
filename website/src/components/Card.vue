@@ -23,8 +23,6 @@ export default {
     imgSrc: '',
     description: '',
     location: '',
-    
-
   },
 };
 </script>

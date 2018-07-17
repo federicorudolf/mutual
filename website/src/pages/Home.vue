@@ -1,10 +1,16 @@
 <template>
   <div class="hello">
-    <div class="slider">
-      <app-slider></app-slider>
+      <div class="homeBackground">
+        <div class="slider">
+          <div class="mask">
+          </div>
+          <app-slider></app-slider>
+        </div>
+      
     </div>
     <b-card-group deck class="cardContainer">
       <app-cards v-for="offer in offers"
+                 :key="offer.id"
                  v-bind="offer"></app-cards>
     </b-card-group>
   </div>
@@ -31,7 +37,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .hello {
-    background-color: coral;
   }
   .cardContainer {
     height: 100vw;
@@ -39,9 +44,5 @@ export default {
     padding: 20px;
     margin: 0 10px;
     background-color: blue;
-  }
-  .slider {
-    width: 80%;
-    margin: 0 auto;
   }
 </style>

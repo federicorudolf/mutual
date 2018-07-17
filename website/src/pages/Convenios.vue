@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <span>convenios!</span>
   </div>
 </template>
 <script>
@@ -11,5 +12,8 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+  .container {
+    padding-top: 65px;
+  }
 </style>
 

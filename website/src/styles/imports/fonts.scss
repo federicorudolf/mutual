@@ -1,10 +1,9 @@
 /*
 |--------------------------------------------------------------------------
-| Colors
+| Fonts
 |--------------------------------------------------------------------------
 */
 
-$white: #ffffff;
-$black: #000000;
-$gray: #999999;
-$light-blue-borders: #00cad1;
+@import url('https://fonts.googleapis.com/css?family=Raleway:300');
+
+$raleway: 'Raleway', serif; 
