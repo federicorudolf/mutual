@@ -6,7 +6,6 @@
           </div>
           <app-slider></app-slider>
         </div>
-      
     </div>
     <b-card-group deck class="cardContainer">
       <app-cards v-for="offer in offers"
@@ -37,12 +36,5 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .hello {
-  }
-  .cardContainer {
-    height: 100vw;
-    overflow-y: scroll;
-    padding: 20px;
-    margin: 0 10px;
-    background-color: blue;
   }
 </style>

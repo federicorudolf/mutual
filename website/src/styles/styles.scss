@@ -98,3 +98,24 @@ form,
     position: relative;
     z-index: 1;
 }
+
+.cardContainer {
+    height: 100vw;
+    overflow-y: scroll;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: blue;
+    width: 100%;
+}
+
+.cardBadge {
+    position: absolute;
+    top: 255px;
+    right: 255px;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    padding: 23px 0px;
+    background-color: yellowgreen;
+    cursor: pointer;
+}
