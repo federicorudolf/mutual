@@ -3,6 +3,7 @@
     <b-card :title="title"
             :img-src="imgSrc"
             img-top>
+            <b-badge class="cardBadge">{{ field }}</b-badge>
         <p class="card-text">
             {{ description }}
         </p>
@@ -23,8 +24,7 @@ export default {
     imgSrc: '',
     description: '',
     location: '',
-    
-
+    field: '',
   },
 };
 </script>

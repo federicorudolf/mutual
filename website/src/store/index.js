@@ -7,7 +7,7 @@ const store = new Vuex.Store({
   state: {
     offers: [
       {
-        id: '',
+        id: '1',
         imgSrc: 'https://picsum.photos/300/300/?image=41',
         title: 'Card title',
         description: 'This is a card description',
@@ -15,24 +15,24 @@ const store = new Vuex.Store({
         field: 'Food',
       },
       {
-        id: '',
-        imgSrc: 'https://picsum.photos/300/300/?image=41',
+        id: '2',
+        imgSrc: 'https://picsum.photos/300/300/?image=52',
         title: 'Card title',
         description: 'This is a card description',
         location: 'Bahía Blanca',
         field: 'Food',
       },
       {
-        id: '',
-        imgSrc: 'https://picsum.photos/300/300/?image=41',
+        id: '3',
+        imgSrc: 'https://picsum.photos/300/300/?image=54',
         title: 'Card title',
         description: 'This is a card description',
         location: 'Bahía Blanca',
         field: 'Food',
       },
       {
-        id: '',
-        imgSrc: 'https://picsum.photos/300/300/?image=41',
+        id: '4',
+        imgSrc: 'https://picsum.photos/300/300/?image=58',
         title: 'Card title',
         description: 'This is a card description',
         location: 'Bahía Blanca',
