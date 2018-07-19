@@ -7,28 +7,33 @@
           <app-slider></app-slider>
         </div>
     </div>
-    <b-card-group deck class="cardContainer">
-      <app-cards v-for="offer in offers"
+    <b-card-group deck class="cardContainer container">
+      <app-cards v-for="(offer, index) in offers"
                  :key="offer.id"
-                 v-bind="offer"></app-cards>
+                 v-bind="offer"
+                 v-if="offers && offers.length > 0 && index <= limitationList"></app-cards>
     </b-card-group>
+    <app-about></app-about>
   </div>
 </template>
 
 <script>
 import Slider from '../components/Slider';
 import Card from '../components/Card';
+import aboutUs from '../components/aboutUs';
 
 export default {
   name: 'Home',
   data() {
     return {
       offers: this.$store.state.offers,
+      limitationList: 2,
     };
   },
   components: {
     appSlider: Slider,
     appCards: Card,
+    appAbout: aboutUs,
   },
 };
 </script>
