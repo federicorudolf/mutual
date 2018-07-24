@@ -12,7 +12,7 @@ const store = new Vuex.Store({
         title: 'Card title',
         description: 'This is a card description',
         location: 'Bahía Blanca',
-        field: 'Food',
+        field: 'Gastronomia',
       },
       {
         id: '2',
@@ -20,7 +20,7 @@ const store = new Vuex.Store({
         title: 'Card title',
         description: 'This is a card description',
         location: 'Bahía Blanca',
-        field: 'Food',
+        field: 'Indumentaria',
       },
       {
         id: '3',
@@ -28,7 +28,7 @@ const store = new Vuex.Store({
         title: 'Card title',
         description: 'This is a card description',
         location: 'Bahía Blanca',
-        field: 'Food',
+        field: 'Deportes',
       },
       {
         id: '4',
@@ -36,7 +36,7 @@ const store = new Vuex.Store({
         title: 'Card title',
         description: 'This is a card description',
         location: 'Bahía Blanca',
-        field: 'Food',
+        field: 'Gastronomia',
       },
     ],
   },

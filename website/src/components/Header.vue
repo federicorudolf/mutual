@@ -9,12 +9,14 @@
       <b-collapse is-nav id="nav_collapse">
 
         <b-navbar-nav class="navbar-section">
-          <b-nav-item class="navbar-section__item">
-            <router-link to="/">Home </router-link>
-          </b-nav-item>
-          <b-nav-item class="navbar-section__item">
-            <router-link to="/convenios">Convenios</router-link>
-          </b-nav-item>
+            <router-link to="/"
+                         tag="b-nav-item"
+                         class="navbar-section__item"
+                         active-class="active"> <a>Home</a> </router-link>
+            <router-link to="/convenios"
+                         tag="b-nav-item"
+                         class="navbar-section__item"
+                         active-class="active"> <a>Convenios</a> </router-link>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
@@ -25,12 +27,9 @@
             <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
           </b-nav-form>
 
-          <b-nav-item-dropdown text="Lang" right>
-            <b-dropdown-item href="#">EN</b-dropdown-item>
-            <b-dropdown-item href="#">ES</b-dropdown-item>
-            <b-dropdown-item href="#">RU</b-dropdown-item>
-            <b-dropdown-item href="#">FA</b-dropdown-item>
-          </b-nav-item-dropdown>
+          <b-nav-item class="navbar-section__item">
+            <router-link to="/aboutus">About Us</router-link>
+          </b-nav-item>
 
           <b-nav-item-dropdown right>
             <!-- Using button-content slot -->
