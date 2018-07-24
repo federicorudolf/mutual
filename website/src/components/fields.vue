@@ -1,7 +1,7 @@
 <template>
   <b-container class="bv-example-row">
     <b-row>
-        <b-col class="box-field">
+        <b-col class="box-field" @click="navigateToField('gastronomia')">
           <div class="box-image">
             <div class="image">
               <img class="img-fluid" src="../assets/portfolio-2.jpg" />
@@ -9,7 +9,7 @@
             <div class="overlay d-flex align-items-center justify-content-center">
               <div class="overlay_content">
                 <div class="overlay_group">
-                  <h3>Titulo Rubro</h3>
+                  <h3>Gastronomia</h3>
                   <div class="overlay_text">
                     <p>Descripcion del rubro</p>
                   </div>
@@ -18,7 +18,7 @@
             </div>
           </div>
         </b-col>
-        <b-col class="box-field">
+        <b-col class="box-field" @click="navigateToField('indumentaria')">
           <div class="box-image">
             <div class="image">
               <img class="img-fluid" src="../assets/portfolio-3.jpg" />
@@ -26,7 +26,7 @@
             <div class="overlay d-flex align-items-center justify-content-center">
               <div class="overlay_content">
                 <div class="overlay_group">
-                  <h3>Titulo Rubro</h3>
+                  <h3>Indumentaria</h3>
                   <div class="overlay_text">
                     <p>Descripcion del rubro</p>
                   </div>
@@ -37,7 +37,7 @@
         </b-col>
     </b-row>
     <b-row>
-      <b-col class="box-field">
+      <b-col class="box-field" @click="navigateToField('deportes')">
         <div class="box-image">
           <div class="image">
             <img class="img-fluid" src="../assets/portfolio-7.jpg" />
@@ -45,7 +45,7 @@
           <div class="overlay d-flex align-items-center justify-content-center">
             <div class="overlay_content">
               <div class="overlay_group">
-                <h3>Titulo Rubro</h3>
+                <h3>Deportes</h3>
                 <div class="overlay_text">
                   <p>Descripcion del rubro</p>
                 </div>
@@ -54,7 +54,7 @@
           </div>
         </div>
       </b-col>
-      <b-col class="box-field">
+      <b-col class="box-field" @click="navigateToField('otros')">
         <div class="box-image">
           <div class="image">
             <img class="img-fluid" src="../assets/portfolio-8.jpg" />
@@ -62,7 +62,7 @@
           <div class="overlay d-flex align-items-center justify-content-center">
             <div class="overlay_content">
               <div class="overlay_group">
-                <h3>Titulo Rubro</h3>
+                <h3>Otros</h3>
                 <div class="overlay_text">
                   <p>Descripcion del rubro</p>
                 </div>
@@ -79,6 +79,11 @@ export default {
   data() {
     return {
     };
+  },
+  methods: {
+    navigateToField(field) {
+      this.$router.push(`/rubro/${field}`);
+    },
   },
 };
 </script>

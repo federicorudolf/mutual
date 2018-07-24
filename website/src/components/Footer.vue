@@ -28,7 +28,8 @@
           <b-col>
             <h4>Quienes somos</h4>
             <div>
-              <p>Lorem impsu dol entr prs qet ng repeat non tnr a child on my site wil digov pres entrop</p>
+              <p>Lorem impsu dol entr prs qet ng repeat non tnr a child
+                 on my site wil digov pres entrop</p>
             </div>
             <a href="" class="btn btn-template-main">Contactenos</a>
           </b-col>
@@ -94,7 +95,11 @@ footer .btn {
   border-color: #3386ff;
   border-radius: 0;
   cursor: pointer;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
 }
 
 footer .btn:hover {
