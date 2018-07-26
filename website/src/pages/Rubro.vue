@@ -1,9 +1,20 @@
 <template>
   <div class="container">
       <app-head v-bind:title="title"></app-head>
-      <app-card v-if="items.length > 0"
-                v-for="item in items"
-                :key="item.id"></app-card>
+      <section v-if="items.length > 0">
+        <div class="container">
+          <b-row v-for="item in items" :key="item.id">
+            <b-col>
+              <img :src="item.Image" />
+            </b-col>
+            <b-col>
+              <h2>{{item.Empresa}}</h2>
+              <p>{{item.Descripcion}}</p>
+              <button class="btn btn-template-outlined"><i class="fas fa-book"></i>Leer mas</button>
+            </b-col>
+          </b-row>
+        </div>
+      </section>
       <h1 v-else> {{ emptyMessage }} </h1>
   </div>
 </template>
@@ -25,6 +36,8 @@ export default {
     updateData() {
       this.items = [];
       const field = this.$route.params.id;
+      let item = this.$store.state.offers;
+
       this.$store.state.offers.forEach((item) => {
         const itemField = item.field.toLowerCase();
         const newItem = {};
@@ -33,6 +46,7 @@ export default {
           newItem.Descripcion = item.description;
           newItem.Ciudad = item.location;
           newItem.Rubro = item.field;
+          newItem.Image = item.imgSrc;
           this.items.push(newItem);
         }
       });
@@ -53,5 +67,22 @@ export default {
   padding: 60px 0 0 0;
   margin: 0 auto;
 }
+.row {
+  padding: 20px;
+  margin: 20px 0;
+}
+h2 {
+  text-transform: uppercase;
+}
+h2:after {
+  content: " ";
+  display: block;
+  width: 100px;
+  height: 2px;
+  margin-top: .6rem;
+  background: #1986ff;
+}
+i {
+  margin-right: 5px;
+}
 </style>
-

@@ -1,13 +1,13 @@
 <template>
   <div class="container">
     <b-card-group>
-      <app-card v-bind="convenio"></app-card>
+      <app-conv v-bind="convenio"></app-conv>
     </b-card-group>
   </div>
 </template>
 
 <script>
-import card from '../components/Card';
+import conv from '../components/conv';
 
 export default {
   name: 'Convenio',
@@ -18,7 +18,7 @@ export default {
     };
   },
   components: {
-    appCard: card,
+    appConv: conv,
   },
   created() {
     this.convenio = this.$store.state.offers.filter(item => item.id === this.id);
