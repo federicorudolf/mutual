@@ -17,7 +17,7 @@ a {
     color: $black;
     &:hover {
         text-decoration: none;
-        color: $black;      
+        color: $black;
     }
 }
 
@@ -97,4 +97,10 @@ form,
     background-size: cover;
     position: relative;
     z-index: 1;
+}
+
+.cardContainer {
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
 }
