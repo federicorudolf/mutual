@@ -1,12 +1,15 @@
 <template>
   <div class="container">
       <app-head v-bind:title="title"></app-head>
-      <b-table v-if="items.length > 0" :items="items"></b-table>
+      <app-card v-if="items.length > 0"
+                v-for="item in items"
+                :key="item.id"></app-card>
       <h1 v-else> {{ emptyMessage }} </h1>
   </div>
 </template>
 <script>
 import headingTitle from '../components/headingTitle';
+import card from '../components/Card';
 
 export default {
   data() {
@@ -37,6 +40,7 @@ export default {
   },
   components: {
     appHead: headingTitle,
+    appCard: card,
   },
   created() {
     this.title = this.$route.params.id;
