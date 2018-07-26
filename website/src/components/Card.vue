@@ -1,5 +1,6 @@
 <template>
-  <div class="card-container">
+  <div class="card-container"
+       @click="loadOffer(id)">
     <b-badge class="cardBadge">{{ field }}</b-badge>
     <b-card :title="title"
             :img-src="imgSrc"
@@ -27,6 +28,12 @@ export default {
     description: '',
     location: '',
     field: '',
+    id: '',
+  },
+  methods: {
+    loadOffer(id) {
+      this.$router.push(`/convenio/${id}`);
+    },
   },
 };
 </script>
