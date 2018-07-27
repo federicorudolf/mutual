@@ -22,6 +22,11 @@ import Slider from '../components/Slider';
 import Card from '../components/Card';
 import aboutUs from '../components/aboutUs';
 
+// Todo:
+//      1) Carousel (el del mockup es owl carousel es un plugin)
+//      2) Pulir el navbar (eliminar botones innecesarios, buscador, etc)
+//      3) Popular data
+
 export default {
   name: 'Home',
   data() {
