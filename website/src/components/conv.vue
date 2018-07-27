@@ -9,13 +9,13 @@
           <h2>{{title}}</h2>
           <blockquote class="blockquote blockquote-reverse">
             <p>{{description}}</p>
-            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            <footer class="blockquote-footer">Someone famous in
+              <cite title="Source Title">Source Title</cite>
+              </footer>
           </blockquote>
-
           <i class="fas fa-map-marker-alt"></i>{{ location }}
         </b-col>
       </b-row>
-    </div>
     </div>
   </div>
 </template>
@@ -32,7 +32,7 @@ export default {
     location: '',
     field: '',
     id: '',
-  }
+  },
 };
 </script>
 <style lang="scss" scoped>

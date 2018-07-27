@@ -22,6 +22,7 @@ export default {
   },
   created() {
     this.convenio = this.$store.state.offers.filter(item => item.id === this.id);
+    window.scrollTo(0, 0);
   },
 };
 </script>
