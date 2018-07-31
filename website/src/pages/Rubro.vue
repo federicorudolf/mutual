@@ -19,8 +19,10 @@
             <b-col>
               <h2>{{item.Empresa}}</h2>
               <p>{{item.Descripcion}}</p>
-              <p><small class="text-muted"><i class="fas fa-map-marker-alt"></i>{{ item.Ciudad }}</small></p>
-              <button class="btn btn-template-outlined"><i class="fas fa-book"></i>Leer mas</button>
+              <button class="btn btn-template-outlined"
+                      @click="loadOffer(item.Id)">
+                      <i class="fas fa-book"></i>
+                      Leer mas</button>
             </b-col>
           </b-row>
         </div>
@@ -46,8 +48,6 @@ export default {
     updateData() {
       this.items = [];
       const field = this.$route.params.id;
-      let item = this.$store.state.offers;
-
       this.$store.state.offers.forEach((item) => {
         const itemField = item.field.toLowerCase();
         const newItem = {};
@@ -57,9 +57,13 @@ export default {
           newItem.Ciudad = item.location;
           newItem.Rubro = item.field;
           newItem.Image = item.imgSrc;
+          newItem.Id = item.id;
           this.items.push(newItem);
         }
       });
+    },
+    loadOffer(id) {
+      this.$router.push(`/convenio/${id}`);
     },
   },
   components: {
