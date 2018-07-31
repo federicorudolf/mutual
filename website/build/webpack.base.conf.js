@@ -26,7 +26,7 @@ module.exports = {
   },
   externals: {
     jquery: 'jQuery'
-  }
+  },
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
