@@ -3,9 +3,18 @@
       <app-head v-bind:title="title"></app-head>
       <section v-if="items.length > 0">
         <div class="container">
-          <b-row v-for="item in items" :key="item.id">
-            <b-col>
-              <img :src="item.Image" />
+          <b-row class="r_row" v-for="item in items" :key="item.id">
+            <b-col class="r-col">
+              <div class="box-image">
+                <img :src="item.Image" />
+                <div class="overlay align-items-center justify-content-center d-flex">
+                  <div class="content">
+                    <div class="buttons">
+                      <button class="btn btn-template-outlined-white"><i class="fas fa-book"></i>Leer mas</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </b-col>
             <b-col>
               <h2>{{item.Empresa}}</h2>
@@ -89,5 +98,12 @@ h2:after {
 }
 i {
   margin-right: 5px;
+}
+.box-image {
+  margin: 0;
+}
+img {
+  width: 100%;
+  height: auto;
 }
 </style>

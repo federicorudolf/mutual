@@ -25,10 +25,13 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+  .container {
+    margin-bottom: 30px;
+  }
   .top {
     padding-top: 55px;
   }
   .container {
-    padding-top: 65px;
+    padding-top: 30px;
   }
 </style>
