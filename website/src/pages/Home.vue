@@ -7,13 +7,17 @@
           <app-slider></app-slider>
         </div>
     </div>
-    <b-card-group deck class="cardContainer container">
-      <app-cards v-for="(offer, index) in offers"
-                 :key="offer.id"
-                 v-bind="offer"
-                 v-if="offers && offers.length > 0 && index <= limitationList"></app-cards>
-    </b-card-group>
+    <div class="animated slideInLeft delay-3s container">
+      <h2>Convenios adheridos</h2>
+      <b-row>
+        <app-cards v-for="(offer, index) in offers"
+                   :key="offer.id"
+                   v-bind="offer"
+                   v-if="offers && offers.length > 0 && index <= limitationList"></app-cards>
+      </b-row>
+    </div>
     <app-about></app-about>
+    <app-contact></app-contact>
   </div>
 </template>
 
@@ -21,19 +25,21 @@
 import Slider from '../components/Slider';
 import Card from '../components/Card';
 import aboutUs from '../components/aboutUs';
+import contactMe from '../components/contactMe';
 
 export default {
   name: 'Home',
   data() {
     return {
       offers: this.$store.state.offers,
-      limitationList: 2,
+      limitationList: 3,
     };
   },
   components: {
     appSlider: Slider,
     appCards: Card,
     appAbout: aboutUs,
+    appContact: contactMe,
   },
 };
 </script>

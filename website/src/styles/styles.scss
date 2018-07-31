@@ -7,6 +7,28 @@
 @import 'imports/colors';
 @import 'imports/fonts';
 
+@mixin breakpoint($class) {
+  @if $class == xs {
+    @media (max-width: 767px) { @content; }
+  }
+
+  @else if $class == sm {
+    @media (min-width: 768px) { @content; }
+  }
+
+  @else if $class == md {
+    @media (min-width: 992px) { @content; }
+  }
+
+  @else if $class == lg {
+    @media (min-width: 1200px) { @content; }
+  }
+
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}
+
 body {
     overflow-y: scroll;
     overflow-x: hidden;
@@ -138,4 +160,145 @@ form,
     padding: 20px;
     margin: 0 auto;
     width: 100%;
+}
+
+
+
+/* Default Image && Buttons */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+  max-width: 100%;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.box-image {
+  position: relative;
+  margin: 20px 0;
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(30, 100, 193, 0.6);
+    padding: 20px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    opacity: 0;
+  }
+
+  .buttons {
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  &:hover p {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+  }
+  &:hover h3,
+  &:hover p,
+  &:hover .buttons {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  &:hover .buttons {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+
+  &:hover .overlay {
+    opacity: 1;
+  }
+}
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.btn-template-outlined-white {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 0;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background: #fff;
+    color: #1986ff;
+  }
+}
+
+.r_row {
+  border-top: 2px solid #1986ff;
+
+  .r-col {
+    max-width: 25%;
+  }
+  @include breakpoint(xs) {
+    display: block;
+
+    .r-col {
+      max-width: 100%;
+    }
+  }
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+
+  &:after {
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 2px;
+    margin-top: .6rem;
+    background-color: #1986ff;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.card-content {
+  @include breakpoint(xs) {
+    flex-basis: unset;
+  }
+}
+
+.more-info {
+  .container {
+    @include breakpoint(xs) {
+      flex-direction: column !important;
+
+      h3 {
+        text-align: center !important;
+        margin-right: 0 !important;
+      }
+    }
+  }
 }

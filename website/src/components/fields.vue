@@ -2,16 +2,17 @@
   <b-container class="bv-example-row">
     <b-row>
         <b-col class="box-field" @click="navigateToField('gastronomia')">
+          <h2>Gastronomia</h2>
           <div class="box-image">
             <div class="image">
-              <img class="img-fluid" src="../assets/portfolio-2.jpg" />
+              <img class="img-fluid" src="https://www.viajejet.com/wp-content/viajes/los-ingredientes-basicos-de-la-gastronomia-espanola-1440x810.jpg" />
             </div>
             <div class="overlay d-flex align-items-center justify-content-center">
               <div class="overlay_content">
                 <div class="overlay_group">
                   <h3>Gastronomia</h3>
                   <div class="overlay_text">
-                    <p>Descripcion del rubro</p>
+                    <button @click="navigateToField('gastronomia')" class="btn btn-template-outlined-white"><i class="fas fa-list-ul"></i>Ver lista</button>
                   </div>
                 </div>
               </div>
@@ -19,16 +20,17 @@
           </div>
         </b-col>
         <b-col class="box-field" @click="navigateToField('indumentaria')">
+          <h2>Indumentaria</h2>
           <div class="box-image">
             <div class="image">
-              <img class="img-fluid" src="../assets/portfolio-3.jpg" />
+              <img class="img-fluid" src="https://i.ytimg.com/vi/8QpV9HV2xqA/maxresdefault.jpg" />
             </div>
             <div class="overlay d-flex align-items-center justify-content-center">
               <div class="overlay_content">
                 <div class="overlay_group">
                   <h3>Indumentaria</h3>
                   <div class="overlay_text">
-                    <p>Descripcion del rubro</p>
+                    <button @click="navigateToField('indumentaria')" class="btn btn-template-outlined-white"><i class="fas fa-list-ul"></i>Ver lista</button>
                   </div>
                 </div>
               </div>
@@ -38,16 +40,17 @@
     </b-row>
     <b-row>
       <b-col class="box-field" @click="navigateToField('deportes')">
+        <h2>Deportes</h2>
         <div class="box-image">
           <div class="image">
-            <img class="img-fluid" src="../assets/portfolio-7.jpg" />
+            <img class="img-fluid" src="https://frasesdelavida.com/wp-content/uploads/2018/01/Frases-de-deportes.jpg" />
           </div>
           <div class="overlay d-flex align-items-center justify-content-center">
             <div class="overlay_content">
               <div class="overlay_group">
                 <h3>Deportes</h3>
                 <div class="overlay_text">
-                  <p>Descripcion del rubro</p>
+                  <button @click="navigateToField('deportes')" class="btn btn-template-outlined-white"><i class="fas fa-list-ul"></i>Ver lista</button>
                 </div>
               </div>
             </div>
@@ -55,16 +58,17 @@
         </div>
       </b-col>
       <b-col class="box-field" @click="navigateToField('otros')">
+        <h2>Otros</h2>
         <div class="box-image">
           <div class="image">
-            <img class="img-fluid" src="../assets/portfolio-8.jpg" />
+            <img class="img-fluid" src="http://ias-indonesia.com/wp-content/uploads/2017/11/sertifikasi-iso-20000.jpg" />
           </div>
           <div class="overlay d-flex align-items-center justify-content-center">
             <div class="overlay_content">
               <div class="overlay_group">
                 <h3>Otros</h3>
                 <div class="overlay_text">
-                  <p>Descripcion del rubro</p>
+                  <button @click="navigateToField('otros')" class="btn btn-template-outlined-white"><i class="fas fa-list-ul"></i>Ver lista</button>
                 </div>
               </div>
             </div>
@@ -91,6 +95,11 @@ export default {
 .box-field {
   padding: 0;
   margin-top: -10px;
+  flex-basis: unset;
+  cursor: pointer;
+}
+.box-image {
+  margin: 0;
 }
 .box-image:hover .overlay {
   opacity: 1;
@@ -138,5 +147,17 @@ export default {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
+  text-align: center;
+}
+img {
+  width: 100%;
+}
+h2 {
+  background: #f3f3f3;
+  padding: 20px;
+  margin-bottom: 0;
+}
+i {
+  margin-right: 5px;
 }
 </style>
