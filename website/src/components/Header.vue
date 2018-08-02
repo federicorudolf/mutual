@@ -68,5 +68,8 @@ export default {
     border-bottom: 1px solid rgba($color: $light-blue-borders, $alpha: 1.0);
   }
 
-</style>
+  .navbar-nav .router-link-exact-active.active {
+    border-bottom: 5px solid #1986ff;
+  }
 
+</style>

@@ -117,12 +117,15 @@ form,
     height: 56px;
     &-section {
         &__item {
+            text-transform: uppercase;
             font-family: $roboto;
             color: $black !important;
             height: 56px;
             padding-top: 10px;
-            &:hover {
-                background-color: rgba($black, 0.8);
+            &:hover,
+            &:active,
+            &:visited {
+                background-color: rgba(30, 100, 193, 0.6);
             }
             &:hover>a>a {
                 color: $white;
@@ -138,7 +141,7 @@ form,
 .mask {
     height: 100vh;
     max-height: 100vh;
-    background-color: rgba($light-blue-borders, 0.7);
+    background-color: rgba(30, 100, 193, 0.6);
     z-index: -1;
     position: absolute;
     top: 0;
@@ -299,4 +302,24 @@ h2 {
       }
     }
   }
+}
+
+footer {
+    @include breakpoint(xs) {
+      .footer-r {
+        text-align: center;
+        .contact-col {
+          flex-basis: unset;
+          margin-top: 30px;
+
+          div {
+            display: inline-flex;
+          }
+
+          img {
+            max-width: 50%;
+          }
+        }
+      }
+    }
 }

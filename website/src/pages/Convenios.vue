@@ -3,7 +3,7 @@
     <div>
       <app-head v-bind:title="title"></app-head>
     </div>
-    <div class="container">
+    <div class="animated slideInRight delay-2s container">
       <app-fields></app-fields>
     </div>
   </div>
@@ -26,7 +26,7 @@ export default {
 </script>
 <style lang="scss" scoped>
   .container {
-    margin-bottom: 30px;
+    margin-bottom: 3%;
   }
   .top {
     padding-top: 55px;

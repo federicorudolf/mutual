@@ -10,7 +10,7 @@
               <p>Business. Corporate. Agency.<br>Portfolio. Blog. E-commerce.</p>
             </div>
             <div class="col-md-7">
-              <img src="../assets/template-homepage.png" alt="" class="img-fluid">
+              <img src="http://www.motozone.com.ar/wp-content/uploads/2015/11/cropped-motz-favicon.png" alt="" class="img-fluid">
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@ export default {
       items : 1,
       lazyLoad : true,
       navigation : true,
-      autoplay: true
+      autoplay: false
     });
     }
   },
@@ -104,7 +104,7 @@ export default {
 }
 
 .dark-mask {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(30, 100, 193, 0.6);
   width: 100%;
   height: 100%;
   position: absolute;

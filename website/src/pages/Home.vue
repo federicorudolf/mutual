@@ -1,11 +1,14 @@
 <template>
   <div class="hello">
-      <div class="homeBackground">
-        <div class="slider">
-          <div class="mask">
-          </div>
-          <app-slider></app-slider>
+    <div class="homeBackground">
+      <div class="slider">
+        <div class="mask">
         </div>
+        <app-slider></app-slider>
+      </div>
+    </div>
+    <div class="animated slideInRight delay-2s">
+      <app-about></app-about>
     </div>
     <div class="animated slideInLeft delay-3s container">
       <h2>Convenios adheridos</h2>
@@ -16,8 +19,7 @@
                    v-if="offers && offers.length > 0 && index <= limitationList"></app-cards>
       </b-row>
     </div>
-    <app-about></app-about>
-    <app-contact></app-contact>
+    <app-contact class="animated slideInRight delay-2s"></app-contact>
   </div>
 </template>
 
