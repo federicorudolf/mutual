@@ -61,7 +61,7 @@
         <h2>Otros</h2>
         <div class="box-image">
           <div class="image">
-            <img class="img-fluid" src="http://ias-indonesia.com/wp-content/uploads/2017/11/sertifikasi-iso-20000.jpg" />
+            <img class="img-fluid" src="http://www.hotelroomsearch.net/im/hotels/es/shopping-center-1.jpg" />
           </div>
           <div class="overlay d-flex align-items-center justify-content-center">
             <div class="overlay_content">
