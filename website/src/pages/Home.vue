@@ -10,7 +10,7 @@
     <div class="animated slideInRight delay-2s">
       <app-about></app-about>
     </div>
-    <div class="animated slideInLeft delay-3s container">
+    <div class="c-cont animated slideInLeft delay-3s container">
       <h2>Convenios adheridos</h2>
       <b-row>
         <app-cards v-for="(offer, index) in offers"
@@ -53,6 +53,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .hello {
+  .c-cont {
+    padding: 60px 0;
   }
 </style>
