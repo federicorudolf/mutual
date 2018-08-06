@@ -2,7 +2,12 @@
   <div class="more-info">
     <div class="container">
         <h3>{{title}}</h3>
-        <button class="btn btn-template-outlined-white"><i class="fab fa-wpforms"></i>Contactenos</button>
+        <router-link to="/aboutus"
+                         tag="button"
+                         class="btn btn-template-outlined-white"
+                         active-class="active">
+                         <i class="fab fa-wpforms"></i> Contactenos
+        </router-link>
     </div>
   </div>
 </template>

@@ -61,13 +61,14 @@ export default {
   },
   methods: {
     carousel() {
-    $(".owl-carousel").owlCarousel({
-      items : 1,
-      lazyLoad : true,
-      navigation : true,
-      autoplay: false
-    });
-    }
+      // eslint-disable-next-line
+      $('.owl-carousel').owlCarousel({
+        items: 1,
+        lazyLoad: true,
+        navigation: true,
+        autoplay: false,
+      });
+    },
   },
   mounted() {
     this.carousel();

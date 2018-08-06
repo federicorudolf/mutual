@@ -12,7 +12,10 @@
                 <div class="overlay_group">
                   <h3>Gastronomia</h3>
                   <div class="overlay_text">
-                    <button @click="navigateToField('gastronomia')" class="btn btn-template-outlined-white"><i class="fas fa-list-ul"></i>Ver lista</button>
+                    <button @click="navigateToField('gastronomia')"
+                            class="btn btn-template-outlined-white">
+                            <i class="fas fa-list-ul"></i>Ver lista
+                    </button>
                   </div>
                 </div>
               </div>
@@ -30,7 +33,10 @@
                 <div class="overlay_group">
                   <h3>Indumentaria</h3>
                   <div class="overlay_text">
-                    <button @click="navigateToField('indumentaria')" class="btn btn-template-outlined-white"><i class="fas fa-list-ul"></i>Ver lista</button>
+                    <button @click="navigateToField('indumentaria')"
+                            class="btn btn-template-outlined-white">
+                            <i class="fas fa-list-ul"></i>Ver lista
+                    </button>
                   </div>
                 </div>
               </div>
@@ -50,7 +56,10 @@
               <div class="overlay_group">
                 <h3>Deportes</h3>
                 <div class="overlay_text">
-                  <button @click="navigateToField('deportes')" class="btn btn-template-outlined-white"><i class="fas fa-list-ul"></i>Ver lista</button>
+                  <button @click="navigateToField('deportes')"
+                          class="btn btn-template-outlined-white">
+                          <i class="fas fa-list-ul"></i>Ver lista
+                  </button>
                 </div>
               </div>
             </div>
@@ -68,7 +77,10 @@
               <div class="overlay_group">
                 <h3>Otros</h3>
                 <div class="overlay_text">
-                  <button @click="navigateToField('otros')" class="btn btn-template-outlined-white"><i class="fas fa-list-ul"></i>Ver lista</button>
+                  <button @click="navigateToField('otros')"
+                          class="btn btn-template-outlined-white">
+                          <i class="fas fa-list-ul"></i>Ver lista
+                  </button>
                 </div>
               </div>
             </div>

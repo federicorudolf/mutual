@@ -10,7 +10,9 @@
                 <div class="overlay align-items-center justify-content-center d-flex">
                   <div class="content">
                     <div class="buttons">
-                      <button class="btn btn-template-outlined-white"><i class="fas fa-book"></i>Leer mas</button>
+                      <button class="btn btn-template-outlined-white" @click="loadOffer(item.Id)">
+                        <i class="fas fa-book"></i>Leer mas
+                      </button>
                     </div>
                   </div>
                 </div>
