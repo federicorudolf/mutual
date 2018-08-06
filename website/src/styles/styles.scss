@@ -29,8 +29,10 @@
   }
 }
 
+html {
+  overflow-x: hidden;
+}
 body {
-    overflow-y: scroll;
     overflow-x: hidden;
     font-family: $roboto;
 }
@@ -322,4 +324,31 @@ footer {
         }
       }
     }
+}
+
+.conv-c {
+  @include breakpoint(xs) {
+    .col {
+      flex-basis: unset;
+    }
+  }
+}
+
+.c-cont {
+  @include breakpoint(xs) {
+    .row {
+      margin: 0 10px;
+    }
+  }
+}
+
+@include breakpoint(xs) {
+  .navbar button {
+    background: #3386ff;
+  }
+
+  .navbar-collapse {
+    background: #FFF;
+    padding: 15px;
+  }
 }

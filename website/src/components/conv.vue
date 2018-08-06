@@ -2,18 +2,20 @@
   <div>
     <div class="container">
       <b-row>
-        <b-col>
+        <b-col class="img-c">
           <img :src="imgSrc"/>
         </b-col>
         <b-col>
-          <h2>{{title}}</h2>
+          <h2>{{ title }}</h2>
           <blockquote class="blockquote blockquote-reverse">
-            <p>{{description}}</p>
-            <footer class="blockquote-footer">Someone famous in
-              <cite title="Source Title">Source Title</cite>
-              </footer>
+            <p>{{ description }}</p>
+            <h4>Beneficios</h4>
+            <footer class="blockquote-footer">{{beneficio}}</footer>
           </blockquote>
-          <i class="fas fa-map-marker-alt"></i>{{ location }}
+          <div class="direction">
+            <h4>Direccion</h4>
+            <i class="fas fa-map-marker-alt"></i>{{ location }}
+          </div>
         </b-col>
       </b-row>
     </div>
@@ -30,6 +32,7 @@ export default {
     imgSrc: '',
     description: '',
     location: '',
+    beneficio: '',
     field: '',
     id: '',
   },
@@ -39,5 +42,10 @@ export default {
 i {
   color: #3386ff;
   margin-right: 5px;
+}
+
+.direction {
+  background: #f3f3f3;
+  padding: 15px;
 }
 </style>

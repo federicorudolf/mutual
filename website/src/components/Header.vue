@@ -53,5 +53,4 @@ export default {
   .navbar-nav .router-link-exact-active.active {
     border-bottom: 5px solid #1986ff;
   }
-
 </style>
