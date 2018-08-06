@@ -7,7 +7,10 @@
         <div class="box-image">
           <img :src="imgSrc" />
           <div class="overlay d-flex align-items-center justify-content-center">
-            <a href="#" class="btn btn-template-outlined-white"><i class="fas fa-book"></i>Leer mas</a>
+            <a href="#"
+               class="btn btn-template-outlined-white">
+               <i class="fas fa-book"></i>Leer mas
+            </a>
           </div>
         </div>
         <div class="text">
