@@ -10,7 +10,7 @@
           <blockquote class="blockquote blockquote-reverse">
             <p>{{ description }}</p>
             <h4>Beneficios</h4>
-            <footer class="blockquote-footer">{{beneficio}}</footer>
+            <footer class="blockquote-footer"> {{beneficio}} </footer>
           </blockquote>
           <div class="direction">
             <h4>Direccion</h4>

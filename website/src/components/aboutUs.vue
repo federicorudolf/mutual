@@ -37,7 +37,6 @@ export default {
 
   .bg-container {
     background: url('../assets/texture-bw.png') center center repeat;
-    border-top: 1px solid #999;
     border-bottom: 1px solid #999;
     padding: 60px 0;
   }
