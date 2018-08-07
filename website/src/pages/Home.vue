@@ -1,12 +1,6 @@
 <template>
   <div class="hello">
-    <div class="homeBackground">
-      <div class="slider">
-        <div class="mask">
-        </div>
-        <app-slider></app-slider>
-      </div>
-    </div>
+    <app-slider></app-slider>
     <div class="animated slideInRight delay-2s">
       <app-about></app-about>
     </div>
@@ -53,7 +47,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .hello {
+    padding-top: 55px;
+  }
   .c-cont {
     padding: 60px 0;
+  }
+
+  .homepage.owl-carousel {
+    display: flex;
   }
 </style>

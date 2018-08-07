@@ -1,46 +1,10 @@
 <template>
-  <div class="home-carousel">
-    <div class="dar-mask mask-primary"></div>
-    <div class="container">
-      <div class="homepage owl-carousel">
-        <div class="item">
-          <div class="row">
-            <div class="col-md-5 text-right">
-              <h1 class="ko-h">KO Sport</h1>
-              <p>Esta tienda se encuentra adherida a nuestros convenios, <br> para obtener el beneficio, por favor contactese con nosotros.</p>
-              <p>Con la compra de mas de $5000<br>Hasta 3 cuotas sin interes</p>
-              <div class="circle ko-ch"> - 10% </div>
-            </div>
-            <div class="col-md-7">
-              <img src="https://4.bp.blogspot.com/-sZ31dfkufr8/WWnFQKSW-SI/AAAAAAAAEfQ/Bq3qWwA55McKc_yIzy50PnOSGboCnpGhQCLcBGAs/s1600/PNGPIX-COM-Floyd-Mayweather-PNG-Transparent-Image.png" alt="" class="img-fluid">
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="row">
-            <div class="col-md-5 text-right">
-              <h1 class="m-z">Motozone</h1>
-              <p>Esta tienda se encuentra adherida a nuestros convenios, <br> para obtener el beneficio, por favor contactese con nosotros.</p>
-              <div class="circle m-cz"> 12 cuotas</div>
-            </div>
-            <div class="col-md-7">
-              <img src="http://pngimg.com/uploads/motorcycle/motorcycle_PNG3142.png" alt="" class="img-fluid">
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="row">
-            <div class="col-md-5 text-right">
-              <h1 class="no-end">No End</h1>
-              <p>Esta tienda se encuentra adherida a nuestros convenios, <br> para obtener el beneficio, por favor contactese con nosotros.</p>
-              <div class="circle no-cend"> - 10% </div>
-            </div>
-            <div class="col-md-7">
-              <img src="https://www.pngarts.com/files/2/Shoes-Transparent-Background-PNG.png" alt="" class="img-fluid">
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="homepage owl-carousel">
+    <div class="item">
+      <img src="../assets/slide001.png" />
+    </div>
+    <div class="item">
+      <img src="../assets/slide002.png" />
     </div>
   </div>
 </template>
@@ -59,7 +23,7 @@ export default {
         items: 1,
         lazyLoad: true,
         navigation: true,
-        autoplay: false,
+        autoplay: true,
       });
     },
   },
