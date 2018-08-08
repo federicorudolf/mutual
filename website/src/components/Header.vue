@@ -12,15 +12,15 @@
             <router-link to="/"
                          tag="b-nav-item"
                          class="navbar-section__item"
-                         active-class="active"> <a>Home</a> </router-link>
+                         active-class="active"> <b-nav-item class="item">Home</b-nav-item> </router-link>
             <router-link to="/convenios"
                          tag="b-nav-item"
                          class="navbar-section__item"
-                         active-class="active"> <a>Convenios</a> </router-link>
+                         active-class="active"> <b-nav-item class="item">Convenios</b-nav-item> </router-link>
             <router-link to="/aboutus"
                          tag="b-nav-item"
                          class="navbar-section__item"
-                         active-class="active"> <a>Contacto</a> </router-link>
+                         active-class="active"> <b-nav-item class="item">Contacto</b-nav-item> </router-link>
         </b-navbar-nav>
 
       </b-collapse>
@@ -52,5 +52,14 @@ export default {
 
   .navbar-nav .router-link-exact-active.active {
     border-bottom: 5px solid #1986ff;
+    padding-top: 0;
+  }
+
+  .nav-item {
+    padding-top: 0;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: #000;
   }
 </style>

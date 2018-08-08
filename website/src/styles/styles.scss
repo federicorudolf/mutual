@@ -341,14 +341,33 @@ footer {
     }
   }
 }
+.navbar-collapse {
+  justify-content: flex-end;
+
+  @include breakpoint(xs) {
+    background: #FFF;
+    padding: 15px;
+  }
+}
 
 @include breakpoint(xs) {
   .navbar button {
     background: #3386ff;
   }
+}
 
-  .navbar-collapse {
-    background: #FFF;
-    padding: 15px;
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:after {
+    content: 'Unidad 1 de Noviembre';
+    color: #000;
+  }
+
+  img {
+    margin-right: 10px;
   }
 }

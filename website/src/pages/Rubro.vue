@@ -29,7 +29,14 @@
           </b-row>
         </div>
       </section>
-      <h1 v-else> {{ emptyMessage }} </h1>
+      <div v-else>
+        <div class="conv-alert">
+          <div class="conv-alert-c">
+            <i class="fas fa-info-circle"></i>
+            <h4>No se encuentran convenios adheridos</h4>
+          </div>
+        </div>
+      </div>
   </div>
 </template>
 <script>
@@ -75,6 +82,7 @@ export default {
   created() {
     this.title = this.$route.params.id;
     this.updateData();
+    window.scrollTo(0, 0);
   },
 };
 </script>
@@ -107,5 +115,34 @@ i {
 img {
   width: 100%;
   height: auto;
+}
+
+.conv-alert {
+  border: 3px solid #d20000;
+  background-color: #ff4444;
+  padding: 100px;
+  color: #FFF;
+  margin: 100px 0;
+}
+
+.conv-alert i {
+  font-size: 35px;
+}
+
+.conv-alert h4 {
+  padding-top: 10px;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+.conv-alert-c {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.convenio-c {
+  padding-top: 55px;
 }
 </style>

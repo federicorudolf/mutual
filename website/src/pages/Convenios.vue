@@ -22,6 +22,9 @@ export default {
     appFields: fields,
     appHead: headingTitle,
   },
+  created() {
+    window.scrollTo(0, 0);
+  },
 };
 </script>
 <style lang="scss" scoped>
