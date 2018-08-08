@@ -11,7 +11,10 @@
           <h4>Acceso al beneficio</h4>
         </div>
         <p>
-          Descuento exclusivo para trabajadores de empresas adherentes a la Asociacion Mutual Unidad 1° de Noviembre, que se identifiquen con su carnet y ultimo recibo de sueldo.
+          Descuento exclusivo para trabajadores de empresas adherentes a la Asociacion Mutual Unidad 1° de Noviembre,
+        </p>
+        <p>
+          que se identifiquen con su carnet y ultimo recibo de sueldo.
         </p>
       </div>
     </div>
@@ -60,6 +63,7 @@ export default {
     font-size: 35px;
   }
   .conv-desc p {
+    text-align: center;
     margin-top: 10px;
   }
 

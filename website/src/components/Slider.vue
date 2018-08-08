@@ -6,6 +6,15 @@
     <div class="item">
       <img src="../assets/slide002.png" />
     </div>
+    <div class="item">
+      <img src="../assets/sos.jpg" />
+    </div>
+    <div class="item">
+      <img src="../assets/no-end.jpg" />
+    </div>
+    <div class="item">
+      <img src="../assets/pinotea.jpg" />
+    </div>
   </div>
 </template>
 

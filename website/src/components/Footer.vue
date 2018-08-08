@@ -28,10 +28,14 @@
           <b-col class="contact-col">
             <h4>Quienes somos</h4>
             <div>
-              <p>Lorem impsu dol entr prs qet ng repeat non tnr a child
-                 on my site wil digov pres entrop</p>
+              <p>LA ASOCIACION MUTUAL UNIDAD 1° DE NOVIEMBRE, esta vigente desde 05 de septiembre del 2016...</p>
             </div>
-            <a href="" class="btn btn-template-main">Contactenos</a>
+            <router-link to="/aboutus"
+                             tag="button"
+                             class="btn btn-template-main"
+                             active-class="active">
+                             <i class="fab fa-wpforms"></i> Contactenos
+            </router-link>
           </b-col>
           <b-col class="contact-col">
             <img src="../assets/mutual_l.png" />
@@ -43,7 +47,7 @@
       <div class="container">
         <div class="text">
           <p>
-            © 2018. Mutual / 1 de Noviembre
+            © 2018. Mutual / Unidad 1 de Noviembre
           </p>
         </div>
       </div>

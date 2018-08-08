@@ -42,6 +42,9 @@ export default {
     appAbout: aboutUs,
     appContact: contactMe,
   },
+  created() {
+    window.scrollTo(0, 0);
+  },
 };
 </script>
 
