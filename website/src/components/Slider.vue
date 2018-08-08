@@ -1,12 +1,6 @@
 <template>
   <div class="homepage owl-carousel">
     <div class="item">
-      <img src="../assets/slide001.png" />
-    </div>
-    <div class="item">
-      <img src="../assets/slide002.png" />
-    </div>
-    <div class="item">
       <img src="../assets/sos.jpg" />
     </div>
     <div class="item">

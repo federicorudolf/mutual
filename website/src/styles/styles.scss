@@ -363,8 +363,12 @@ footer {
   cursor: pointer;
 
   &:after {
-    content: 'Unidad 1 de Noviembre';
+    content: 'Asociacion Mutual Unidad 1 de Noviembre';
     color: #000;
+
+    @include breakpoint(xs) {
+      font-size: 10px;
+    }
   }
 
   img {
