@@ -2,10 +2,7 @@
   <div class="container-contact">
     <app-head v-bind:title="title"></app-head>
     <div class="container">
-      <b-form @submit="onSubmit"
-              method="post"
-              action="contacto.php"
-              @reset="onReset"
+      <b-form method="post"
               v-if="show">
         <b-form-group id="exampleInputGroup1"
                       label="Tu email:"
@@ -61,8 +58,7 @@
             <b-form-checkbox value="that">Quiero asociarme como individuo</b-form-checkbox>
           </b-form-checkbox-group>
         </b-form-group>
-        <b-button type="submit" variant="primary" class="btn btn-template-main">Enviar</b-button>
-        <b-button type="reset" variant="danger">Borrar</b-button>
+        <b-button type="submit" variant="primary" class="btn btn-template-main" @click="send()">Enviar</b-button>
       </b-form>
     </div>
   </div>
@@ -70,6 +66,7 @@
 
 <script>
 import headingTitle from '../components/headingTitle';
+import axios from 'axios';
 
 export default {
   data() {
@@ -83,33 +80,13 @@ export default {
         food: null,
         checked: [],
       },
-      foods: [
-        { text: 'Select One', value: null },
-        'Carrots', 'Beans', 'Tomatoes', 'Corn',
-      ],
       show: true,
     };
   },
   methods: {
-    onSubmit(evt) {
-      evt.preventDefault();
-      // eslint-disable-next-line
-      alert(JSON.stringify(this.form));
-    },
-    onReset(evt) {
-      evt.preventDefault();
-      /* Reset our form values */
-      this.form.email = '';
-      this.form.name = '';
-      this.form.company = '';
-      this.form.phone = '';
-      this.form.food = null;
-      this.form.checked = [];
-      /* Trick to reset/clear native browser form validation state */
-      this.show = false;
-      // eslint-disable-next-line
-      this.$nextTick(() => { this.show = true });
-    },
+    send() {
+      console.log("TE ENVIE");
+    }
   },
   created() {
     window.scrollTo(0, 0);
