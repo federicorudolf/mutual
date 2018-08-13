@@ -52,7 +52,9 @@
                       label="Tu mensaje:"
                       label-for="exampleInput5">
           <b-form-textarea required
-                           placeholder="Ingresa tu mensaje">
+                           placeholder="Ingresa tu mensaje"
+                           v-model="form.message"
+                           name="message">
           </b-form-textarea>
         </b-form-group>
         <b-form-group id="exampleGroup6">
@@ -79,6 +81,7 @@ export default {
         name: '',
         company: '',
         phone: '',
+        message: '',
         checked: [],
       },
       show: true,
