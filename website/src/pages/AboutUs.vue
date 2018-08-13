@@ -2,8 +2,7 @@
   <div class="container-contact">
     <app-head v-bind:title="title"></app-head>
     <div class="container">
-      <b-form method="post"
-              v-if="show">
+      <b-form >
         <b-form-group id="exampleInputGroup1"
                       label="Tu email:"
                       label-for="exampleInput1"
@@ -12,7 +11,8 @@
                         type="email"
                         v-model="form.email"
                         required
-                        placeholder="Ingresa tu mail">
+                        placeholder="Ingresa tu mail"
+                        name="email">
           </b-form-input>
         </b-form-group>
         <b-form-group id="exampleInputGroup2"
@@ -22,7 +22,8 @@
                         type="text"
                         v-model="form.name"
                         required
-                        placeholder="Ingresa tu nombre">
+                        placeholder="Ingresa tu nombre"
+                        name="name">
           </b-form-input>
         </b-form-group>
         <b-form-group id="exampleInputGroup3"
@@ -32,7 +33,8 @@
                         type="text"
                         v-model="form.company"
                         required
-                        placeholder="Ingresa tu empresa">
+                        placeholder="Ingresa tu empresa"
+                        name="company">
           </b-form-input>
         </b-form-group>
         <b-form-group id="exampleInputGroup4"
@@ -42,7 +44,8 @@
                         type="text"
                         v-model="form.phone"
                         required
-                        placeholder="Ingresa tu telefono">
+                        placeholder="Ingresa tu telefono"
+                        name="phone">
           </b-form-input>
         </b-form-group>
         <b-form-group id="exampleInputGroup5"
@@ -53,12 +56,12 @@
           </b-form-textarea>
         </b-form-group>
         <b-form-group id="exampleGroup6">
-          <b-form-checkbox-group v-model="form.checked" id="exampleChecks">
-            <b-form-checkbox value="me">Quiero asociarme como empresa</b-form-checkbox>
-            <b-form-checkbox value="that">Quiero asociarme como individuo</b-form-checkbox>
+          <b-form-checkbox-group name="checked" v-model="form.checked" id="exampleChecks">
+            <b-form-checkbox value="Quiero asociarme como empresa">Quiero asociarme como empresa</b-form-checkbox>
+            <b-form-checkbox value="Quiero asociarme como individuo">Quiero asociarme como individuo</b-form-checkbox>
           </b-form-checkbox-group>
         </b-form-group>
-        <b-button type="submit" variant="primary" class="btn btn-template-main" @click="send()">Enviar</b-button>
+        <b-button variant="primary" class="btn btn-template-main" @click="send()">Enviar</b-button>
       </b-form>
     </div>
   </div>
@@ -66,7 +69,6 @@
 
 <script>
 import headingTitle from '../components/headingTitle';
-import axios from 'axios';
 
 export default {
   data() {
@@ -77,7 +79,6 @@ export default {
         name: '',
         company: '',
         phone: '',
-        food: null,
         checked: [],
       },
       show: true,
@@ -85,7 +86,13 @@ export default {
   },
   methods: {
     send() {
-      console.log("TE ENVIE");
+      this.axios.post('http://localhost:3000/mailing/', this.form)
+      .then((res) => {
+        console.log(res);
+      }).
+      catch((error) => {
+        console.log(error);
+      });
     }
   },
   created() {
