@@ -82,4 +82,8 @@ export default {
   .convenio-c {
     padding-top: 55px;
   }
+
+  .conv-desc p {
+    margin: 0;
+  }
 </style>
