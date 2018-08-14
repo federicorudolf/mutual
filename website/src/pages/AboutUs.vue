@@ -120,6 +120,13 @@ export default {
         .then((res) => {
           // eslint-disable-next-line
           console.log(res);
+          this.form.name = '',
+          this.form.email = '',
+          this.form.company = '',
+          this.form.phone = '',
+          this.form.checked = [],
+          this.form.message = ''
+          
         }).catch((error) => {
           // eslint-disable-next-line
           console.log(error);
