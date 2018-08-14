@@ -12,8 +12,11 @@ import Footer from './components/Footer';
 import Vue from 'vue';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
+import Vuetify from 'vuetify';
+import 'vuetify/dist/vuetify.min.css' 
 
 Vue.use(VueAxios, axios);
+Vue.use(Vuetify);
 
 export default {
   name: 'App',

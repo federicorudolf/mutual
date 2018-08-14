@@ -23,22 +23,41 @@ app.get('/', (req, res)=> {
 
 app.post('/mailing', (req, res) => {
   const output = `
-    <p> You have a new contact request </p>
-    <h3> Contact Details </h3>
-    <ul>
-      <li>
-        Email: ${req.body.email}
-      </li>
-      <li>
-        Name: ${req.body.name}
-      </li>
-      <li>
-        Company: ${req.body.company}
-      </li>
-      <li>
-        Phone: ${req.body.phone}
-      </li>
-    </ul>
+    <table width='100%' style='background: white; text-align:center'>
+      <tr>
+        <td>
+          <table width='100%'>
+            <tr>
+              <td>
+                  <h1 style='background-color: #3386ff;color: #fff;min-width: 100%;font-weight: 400;padding: 10px;font-size: 20px;'>Asociacion Mutual Primero de Noviembre</h1>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table table cellspacing='0' cellpadding='10' border='0' width='100%' align='center'>
+            <tr style='border:0;border-collapse:collapse;width:100%;margin: 0 auto;background-color: #000;color: #fff; min-width: 100%;'>
+              <th>Email</th>
+              <th>Nombre</th>
+              <th>Empresa</th>
+              <th>Telefono</th>
+              <th>Mensaje</th>
+              <th>Soy Empresa o Individuo</th>
+            </tr>
+            <tr>
+              <td>${req.body.email}</td>
+              <td>${req.body.name}</td>
+              <td>${req.body.company}</td>
+              <td>${req.body.phone}</td>
+              <td>${req.body.message}</td>
+              <td>${req.body.checked}</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
   `;
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
@@ -55,8 +74,8 @@ app.post('/mailing', (req, res) => {
   let mailOptions = {
       from: '"Unidad Primero de Noviembre" <m.biasola@gmail.com>',
       to: 'matias.biasola.zani@gmail.com',
-      subject: 'Trying to sent an email',
-      text: 'Take a look at this',
+      subject: 'Solicitud de informacion (unidadprimerodenoviembre.com)',
+      text: 'Una persona o empresa esta intentando comunicarse con usted.',
       html: output
   };
   // send mail with defined transport object
