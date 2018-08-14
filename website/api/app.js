@@ -74,8 +74,8 @@ app.post('/mailing', (req, res) => {
   let mailOptions = {
       from: '"Unidad Primero de Noviembre" <m.biasola@gmail.com>',
       to: 'matias.biasola.zani@gmail.com',
-      subject: 'Trying to sent an email',
-      text: 'Take a look at this',
+      subject: 'Solicitud de informacion (unidadprimerodenoviembre.com)',
+      text: 'Una persona o empresa esta intentando comunicarse con usted.',
       html: output
   };
   // send mail with defined transport object

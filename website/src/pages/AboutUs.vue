@@ -2,7 +2,7 @@
   <div class="container-contact">
     <app-head v-bind:title="title"></app-head>
     <div class="container">
-      <b-form >
+      <b-form>
         <b-form-group id="exampleInputGroup1"
                       label="Tu email:"
                       label-for="exampleInput1"
@@ -63,9 +63,25 @@
             <b-form-checkbox value="Quiero asociarme como individuo">Quiero asociarme como individuo</b-form-checkbox>
           </b-form-checkbox-group>
         </b-form-group>
-        <b-button variant="primary" class="btn btn-template-main" @click="send()">Enviar</b-button>
+        <b-button variant="primary" class="btn btn-template-main" @click="send(); snackbar = true;">Enviar</b-button>
       </b-form>
     </div>
+    <v-snackbar
+      v-model="snackbar"
+      :color="color"
+      :multi-line="mode === 'multi-line'"
+      :timeout="timeout"
+      :vertical="mode === 'vertical'"
+      >
+      {{text}}
+      <v-btn
+        dark
+        flat
+        @click="snackbar = false"
+      >
+        Cerrar
+      </v-btn>
+    </v-snackbar>
   </div>
 </template>
 
@@ -76,6 +92,11 @@ export default {
   data() {
     return {
       title: 'Contactenos',
+      snackbar: false,
+      color: 'success',
+      mode: '',
+      timeout: 6000,
+      text: 'El formulario se ha enviado con exito',
       form: {
         email: '',
         name: '',
@@ -96,7 +117,7 @@ export default {
       catch((error) => {
         console.log(error);
       });
-    }
+    },
   },
   created() {
     window.scrollTo(0, 0);
