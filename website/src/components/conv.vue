@@ -11,7 +11,7 @@
             <p>{{ description }}</p>
             <h4>Beneficios</h4>
             <ul>
-              <li v-for="beneficio in beneficios">
+              <li v-for="(beneficio, index) in beneficios" :key="index">
                 <p class="b-number">{{beneficio.number}}<label>{{beneficio.text}}</label></p>
               </li>
             </ul>
@@ -36,7 +36,7 @@ export default {
     imgSrc: '',
     description: '',
     location: '',
-    phone:'',
+    phone: '',
     beneficios: [],
     field: '',
     id: '',

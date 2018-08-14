@@ -12,15 +12,21 @@
             <router-link to="/"
                          tag="b-nav-item"
                          class="navbar-section__item"
-                         active-class="active"> <b-nav-item class="item">Home</b-nav-item> </router-link>
+                         active-class="active">
+                         <b-nav-item class="item">Home</b-nav-item>
+            </router-link>
             <router-link to="/convenios"
                          tag="b-nav-item"
                          class="navbar-section__item"
-                         active-class="active"> <b-nav-item class="item">Convenios</b-nav-item> </router-link>
+                         active-class="active">
+                         <b-nav-item class="item">Convenios</b-nav-item>
+            </router-link>
             <router-link to="/aboutus"
                          tag="b-nav-item"
                          class="navbar-section__item"
-                         active-class="active"> <b-nav-item class="item">Contacto</b-nav-item> </router-link>
+                         active-class="active">
+                         <b-nav-item class="item">Contacto</b-nav-item>
+            </router-link>
         </b-navbar-nav>
 
       </b-collapse>

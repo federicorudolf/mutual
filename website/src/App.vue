@@ -7,13 +7,13 @@
 </template>
 
 <script>
-import Header from './components/Header';
-import Footer from './components/Footer';
+import 'vuetify/dist/vuetify.min.css';
 import Vue from 'vue';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
 import Vuetify from 'vuetify';
-import 'vuetify/dist/vuetify.min.css' 
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 Vue.use(VueAxios, axios);
 Vue.use(Vuetify);

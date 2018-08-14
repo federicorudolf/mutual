@@ -51,8 +51,6 @@ export default {
       emptyMessage: 'Por ahora no hay convenios para este rubro!',
     };
   },
-  watch: {
-  },
   methods: {
     updateData() {
       this.items = [];

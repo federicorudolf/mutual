@@ -59,11 +59,16 @@
         </b-form-group>
         <b-form-group id="exampleGroup6">
           <b-form-checkbox-group name="checked" v-model="form.checked" id="exampleChecks">
-            <b-form-checkbox value="Quiero asociarme como empresa">Quiero asociarme como empresa</b-form-checkbox>
-            <b-form-checkbox value="Quiero asociarme como individuo">Quiero asociarme como individuo</b-form-checkbox>
+            <b-form-checkbox value="Quiero asociarme como empresa">
+              Quiero asociarme como empresa</b-form-checkbox>
+            <b-form-checkbox value="Quiero asociarme como individuo">
+              Quiero asociarme como individuo</b-form-checkbox>
           </b-form-checkbox-group>
         </b-form-group>
-        <b-button variant="primary" class="btn btn-template-main" @click="send(); snackbar = true;">Enviar</b-button>
+        <b-button variant="primary"
+                  class="btn btn-template-main"
+                  @click="send();
+                  snackbar = true">Enviar</b-button>
       </b-form>
     </div>
     <v-snackbar
@@ -86,6 +91,7 @@
 </template>
 
 <script>
+// import axios from 'axios';
 import headingTitle from '../components/headingTitle';
 
 export default {
@@ -111,12 +117,13 @@ export default {
   methods: {
     send() {
       this.axios.post('http://localhost:3000/mailing/', this.form)
-      .then((res) => {
-        console.log(res);
-      }).
-      catch((error) => {
-        console.log(error);
-      });
+        .then((res) => {
+          // eslint-disable-next-line
+          console.log(res);
+        }).catch((error) => {
+          // eslint-disable-next-line
+          console.log(error);
+        });
     },
   },
   created() {
@@ -124,7 +131,7 @@ export default {
   },
   components: {
     appHead: headingTitle,
-  }
+  },
 };
 </script>
 
