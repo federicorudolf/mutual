@@ -105,6 +105,8 @@ app.post('/mailing', (req, res) => {
   console.log(req.body);
 });
 
-app.listen(80, () => {
-  console.log('Server Started..');
+app.set('port', process.env.PORT || 3000);
+
+app.listen(app.get('port'), () => {
+  console.log("Server Started..");
 });
