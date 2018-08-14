@@ -116,7 +116,7 @@ export default {
   },
   methods: {
     send() {
-      this.axios.post('http://localhost:3000/mailing/', this.form)
+      this.axios.post('http://unidadprimerodenoviembre.com/mailing/', this.form)
         .then((res) => {
           // eslint-disable-next-line
           console.log(res);
@@ -126,7 +126,7 @@ export default {
           this.form.phone = '',
           this.form.checked = [],
           this.form.message = ''
-          
+
         }).catch((error) => {
           // eslint-disable-next-line
           console.log(error);

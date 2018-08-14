@@ -1,21 +1,14 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
-
-/**
- * @description Contact form
- */
+//Contact form
 const app = express();
 
-/**
- * @description Middlewares
- */
-app.use(bodyParser.urlencoded({ extended: false }));
+//Middlewares
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-/**
- * @description Cors
- */
+//Cors
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Headers', 'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method');
@@ -24,7 +17,7 @@ app.use((req, res, next) => {
 
   next();
 });
-app.get('/', (req, res) => {
+app.get('/', (req, res)=> {
   console.log('Admin page');
 });
 
@@ -66,45 +59,38 @@ app.post('/mailing', (req, res) => {
       </tr>
     </table>
   `;
-
-  /**
-  * @description Create reusable transporter object using the default SMTP transport
-  */
-  const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 587,
-    secure: false, // true for 465, false for other ports
-    auth: {
-      user: 'm.biasola@gmail.com', // generated ethereal user
-      pass: 'Googlenexus1991', // generated ethereal password
-    },
-    tls: { rejectUnauthorized: false },
+  // create reusable transporter object using the default SMTP transport
+  let transporter = nodemailer.createTransport({
+      host: 'smtp.gmail.com',
+      port: 587,
+      secure: false, // true for 465, false for other ports
+      auth: {
+          user: 'm.biasola@gmail.com', // generated ethereal user
+          pass: 'Googlenexus1991' // generated ethereal password
+      },
+      tls: {rejectUnauthorized: false}
   });
-
-  /**
-  * @description Setup email data with unicode symbols
-  */
-  const mailOptions = {
-    from: '"Unidad Primero de Noviembre" <m.biasola@gmail.com>',
-    to: 'matias.biasola.zani@gmail.com',
-    subject: 'Solicitud de informacion (unidadprimerodenoviembre.com)',
-    text: 'Una persona o empresa esta intentando comunicarse con usted.',
-    html: output,
+  // setup email data with unicode symbols
+  let mailOptions = {
+      from: '"Unidad Primero de Noviembre" <m.biasola@gmail.com>',
+      to: 'a.arbelaez@globant.com',
+      subject: 'Solicitud de informacion (unidadprimerodenoviembre.com)',
+      text: 'Una persona o empresa esta intentando comunicarse con usted.',
+      html: output
   };
-
-  /**
-  * @description Send mail with defined transport object
-  */
+  // send mail with defined transport object
   transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      res.send({ message: 'error' });
-    } else {
-      res.send({ message: 'success' });
-    }
+      if (error) {
+        res.send({ message: 'error'});
+      } else {
+        res.send({ message: 'success'});
+      }
   });
   console.log(req.body);
 });
 
-app.listen(3000, () => {
-  console.log('Server Started..');
+app.set('port', process.env.PORT || 3000);
+
+app.listen(app.get('port'), () => {
+  console.log("Server Started..");
 });
