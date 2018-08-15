@@ -120,7 +120,7 @@ img {
   background-color: #ff4444;
   padding: 100px;
   color: #FFF;
-  margin: 100px 0;
+  margin: 100px 50px;
 }
 
 .conv-alert i {

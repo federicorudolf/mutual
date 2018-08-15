@@ -27,6 +27,7 @@ export default {
         lazyLoad: true,
         navigation: true,
         autoplay: true,
+        loop: true,
       });
     },
   },

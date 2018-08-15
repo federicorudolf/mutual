@@ -26,7 +26,7 @@
           <h2>Indumentaria</h2>
           <div class="box-image">
             <div class="image">
-              <img class="img-fluid" src="https://i.ytimg.com/vi/8QpV9HV2xqA/maxresdefault.jpg" />
+              <img class="img-fluid" src="https://geomarketing.com/wp-content/uploads/2016/11/Holiday-shopping-mobile-1.jpg" />
             </div>
             <div class="overlay d-flex align-items-center justify-content-center">
               <div class="overlay_content">
