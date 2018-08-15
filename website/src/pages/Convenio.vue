@@ -1,3 +1,4 @@
+<!-- eslint-disable -->
 <template>
   <div class="convenio-c">
     <app-head v-bind:title="title"></app-head>

@@ -67,8 +67,7 @@
         </b-form-group>
         <b-button variant="primary"
                   class="btn btn-template-main"
-                  @click="send();
-                  snackbar = true">Enviar</b-button>
+                  @click="send();">Enviar</b-button>
       </b-form>
     </div>
     <v-snackbar
@@ -76,14 +75,12 @@
       :color="color"
       :multi-line="mode === 'multi-line'"
       :timeout="timeout"
-      :vertical="mode === 'vertical'"
-      >
+      :vertical="mode === 'vertical'">
       {{text}}
       <v-btn
         dark
         flat
-        @click="snackbar = false"
-      >
+        @click="snackbar = false">
         Cerrar
       </v-btn>
     </v-snackbar>
@@ -99,10 +96,10 @@ export default {
     return {
       title: 'Contactenos',
       snackbar: false,
-      color: 'success',
+      color: '',
       mode: '',
       timeout: 6000,
-      text: 'El formulario se ha enviado con exito',
+      text: '',
       form: {
         email: '',
         name: '',
@@ -116,20 +113,29 @@ export default {
   },
   methods: {
     send() {
-      this.axios.post('http://unidadprimerodenoviembre.com/mailing/', this.form)
+      this.text = 'Su formulario está siendo enviado';
+      this.color = 'info';
+      this.snackbar = true;
+      this.axios.post('../contacto/contact.php', this.form)
         .then((res) => {
           // eslint-disable-next-line
           console.log(res);
-          this.form.name = '',
-          this.form.email = '',
-          this.form.company = '',
-          this.form.phone = '',
-          this.form.checked = [],
-          this.form.message = ''
+          this.form.name = '';
+          this.form.email = '';
+          this.form.company = '';
+          this.form.phone = '';
+          this.form.checked = [];
+          this.form.message = '';
 
+          this.text = 'El formulario se ha enviado con exito';
+          this.color = 'success';
+          this.snackbar = true;
         }).catch((error) => {
           // eslint-disable-next-line
           console.log(error);
+          this.text = 'Hubo un error al enviar su formulario. Intente nuevamente mas tarde';
+          this.color = 'error';
+          this.snackbar = true;
         });
     },
   },

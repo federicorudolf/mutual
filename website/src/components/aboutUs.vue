@@ -1,3 +1,4 @@
+<!-- eslint-disable -->
 <template>
   <div class="bg-container">
     <div class="text_plane container">
