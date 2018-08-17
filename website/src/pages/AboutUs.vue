@@ -109,6 +109,7 @@ export default {
         checked: [],
       },
       show: true,
+      configHeaders: '',
     };
   },
   methods: {
@@ -116,27 +117,39 @@ export default {
       this.text = 'Su formulario está siendo enviado';
       this.color = 'info';
       this.snackbar = true;
-      this.axios.post('../contacto/contact.php', this.form)
-        .then((res) => {
-          // eslint-disable-next-line
-          console.log(res);
-          this.form.name = '';
-          this.form.email = '';
-          this.form.company = '';
-          this.form.phone = '';
-          this.form.checked = [];
-          this.form.message = '';
-
+      const jsonForm = JSON.stringify(this.form);
+      this.configHeaders = {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+      };
+      this.axios.post('http://www.unidadprimerodenoviembre.com/contacto/contact.php',
+      jsonForm,
+      this.configHeaders)
+      .then((res) => {
+        // eslint-disable-next-line
+        console.log(res);
+        console.log(jsonForm);
+        if(res) {
           this.text = 'El formulario se ha enviado con exito';
           this.color = 'success';
           this.snackbar = true;
-        }).catch((error) => {
-          // eslint-disable-next-line
-          console.log(error);
-          this.text = 'Hubo un error al enviar su formulario. Intente nuevamente mas tarde';
-          this.color = 'error';
-          this.snackbar = true;
-        });
+        setTimeout(() => {
+            this.form.name = '';
+            this.form.email = '';
+            this.form.company = '';
+            this.form.phone = '';
+            this.form.checked = [];
+            this.form.message = '';
+          }, 1000)
+        }
+
+      }).catch((error) => {
+        // eslint-disable-next-line
+        console.log(error);
+        this.text = 'Hubo un error al enviar su formulario. Intente nuevamente mas tarde';
+        this.color = 'error';
+        this.snackbar = true;
+      });
     },
   },
   created() {
