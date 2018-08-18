@@ -380,3 +380,15 @@ footer {
 .overlay .content {
   flex: unset !important;
 }
+
+.process .v-snack__wrapper {
+  background-color: #3386ff !important;
+}
+
+.success .v-snack__wrapper {
+  background-color: #4caf50 !important;
+}
+
+.error .v-snack__wrapper {
+  background-color: #ff5252 !important;
+}

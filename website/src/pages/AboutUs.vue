@@ -71,6 +71,7 @@
       </b-form>
     </div>
     <v-snackbar
+      v-bind:class="stateColor"
       v-model="snackbar"
       :color="color"
       :multi-line="mode === 'multi-line'"
@@ -88,8 +89,10 @@
 </template>
 
 <script>
-// import axios from 'axios';
 import headingTitle from '../components/headingTitle';
+var FormData = require('form-data');
+var qs = require('qs');
+var data = new FormData();
 
 export default {
   data() {
@@ -98,6 +101,7 @@ export default {
       snackbar: false,
       color: '',
       mode: '',
+      stateColor: '',
       timeout: 6000,
       text: '',
       form: {
@@ -117,20 +121,33 @@ export default {
       this.text = 'Su formulario está siendo enviado';
       this.color = 'info';
       this.snackbar = true;
-      const jsonForm = JSON.stringify(this.form);
+      this.stateColor = "process";
       this.configHeaders = {
         'Content-Type': 'application/json',
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'Content-Type': 'multipart/form-data',
         'Access-Control-Allow-Origin': '*',
       };
-      this.axios.post('http://www.unidadprimerodenoviembre.com/contacto/contact.php',
-      jsonForm,
+
+      var form = {
+        'email' : this.form.email,
+        "name" : this.form.name,
+        "company" : this.form.company,
+        "phone" : this.form.phone,
+        "message" : this.form.message,
+        "checked" : this.form.checked,
+      };
+
+      this.axios.post('http://unidadprimerodenoviembre.com/contacto/contact.php',
+      qs.stringify(form),
       this.configHeaders)
       .then((res) => {
         // eslint-disable-next-line
         console.log(res);
-        console.log(jsonForm);
+        console.log(form);
         if(res) {
           this.text = 'El formulario se ha enviado con exito';
+          this.stateColor = "success";
           this.color = 'success';
           this.snackbar = true;
         setTimeout(() => {
@@ -147,6 +164,7 @@ export default {
         // eslint-disable-next-line
         console.log(error);
         this.text = 'Hubo un error al enviar su formulario. Intente nuevamente mas tarde';
+        this.stateColor = "error"
         this.color = 'error';
         this.snackbar = true;
       });
