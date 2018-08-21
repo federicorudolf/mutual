@@ -66,12 +66,12 @@ if (isset($_POST["email"])) {
      </table>";
 
   // Datos de la cuenta de correo utilizada para enviar vía SMTP
-  $smtpHost = "smtp.gmail.com";  // Dominio alternativo brindado en el email de alta
-  $smtpUsuario = "m.biasola@gmail.com";  // Mi cuenta de correo
-  $smtpClave = "Googlenexus1991";  // Mi contraseña
+  $smtpHost = "mail.unidadprimerodenoviembre.com";  // Dominio alternativo brindado en el email de alta
+  $smtpUsuario = "webmail@unidadprimerodenoviembre.com";  // Mi cuenta de correo
+  $smtpClave = "November2018";  // Mi contraseña
 
   // Email donde se enviaran los datos cargados en el formulario de contacto
-  $emailDestino = "matias.biasola.zani@gmail.com";
+  $emailDestino = "contacto@unidadprimerodenoviembre.com";
 
   $mail = new PHPMailer\PHPMailer\PHPMailer();
   $mail->IsSMTP();
