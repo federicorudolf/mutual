@@ -3,7 +3,7 @@
     <div class="card-container"
          @click="loadOffer(id)">
       <div class="home-blog-post">
-        <b-badge class="cardBadge">{{ field }}</b-badge>
+        <b-badge class="cardBadge" :class="field">{{ field }}</b-badge>
         <div class="box-image">
           <img :src="imgSrc" />
           <div class="overlay d-flex align-items-center justify-content-center">
@@ -124,5 +124,29 @@ export default {
 
   i {
     margin-right: 5px;
+  }
+
+  .Indumentaria {
+    background-color: #52cda5;
+
+    &:after {
+      border-top-color: #52cda5;
+    }
+  }
+
+  .Otros {
+    background-color: #F03E3D;
+
+    &:after {
+      border-top-color: #F03E3D;
+    }
+  }
+
+  .Gastronomia {
+    background-color: #ff9819;
+
+    &:after {
+      border-top-color: #ff9819;
+    }
   }
 </style>
