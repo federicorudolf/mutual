@@ -42,5 +42,9 @@ export default {
     background: url('../assets/texture-bw.png') center center repeat;
     border-bottom: 1px solid #999;
     padding: 60px 0;
+
+    p {
+      margin-bottom: 0;
+    }
   }
 </style>

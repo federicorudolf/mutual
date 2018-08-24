@@ -267,7 +267,7 @@ img {
     max-width: 25%;
   }
   @include breakpoint(xs) {
-    display: block;
+    display: none;
 
     .r-col {
       max-width: 100%;
@@ -412,5 +412,34 @@ footer {
     @include breakpoint(xs) {
         text-align: left !important;
     }
+  }
+}
+
+.v-cards-r {
+  margin-top: 20px;
+
+  .col {
+    @include breakpoint(xs) {
+        flex-basis: unset;
+        margin-bottom: 20px;
+    }
+  }
+}
+.v-card {
+  cursor: pointer;
+
+  .v-card__media__content {
+    flex-direction: column;
+  }
+}
+
+.mob-r {
+  display: none;
+  @include breakpoint(xs) {
+      display: block;
+
+      .mob-card {
+        margin-bottom: 20px;
+      }
   }
 }

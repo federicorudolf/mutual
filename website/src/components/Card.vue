@@ -1,27 +1,29 @@
 <template>
-  <b-col class="card-content">
-    <div class="card-container"
-         @click="loadOffer(id)">
-      <div class="home-blog-post">
-        <b-badge class="cardBadge" :class="field">{{ field }}</b-badge>
-        <div class="box-image">
-          <img :src="imgSrc" />
-          <div class="overlay d-flex align-items-center justify-content-center">
-            <a href="#"
-               class="btn btn-template-outlined-white">
-               <i class="fas fa-book"></i>Leer mas
-            </a>
+  <div>
+    <b-col class="card-content">
+      <div class="card-container"
+           @click="loadOffer(id)">
+        <div class="home-blog-post">
+          <b-badge class="cardBadge" :class="field">{{ field }}</b-badge>
+          <div class="box-image">
+            <img :src="imgSrc" />
+            <div class="overlay d-flex align-items-center justify-content-center">
+              <a href="#"
+                 class="btn btn-template-outlined-white">
+                 <i class="fas fa-book"></i>Leer mas
+              </a>
+            </div>
+          </div>
+          <div class="text">
+            <h4>{{title}}</h4>
+            <p class="intro">
+              {{ description }}
+            </p>
           </div>
         </div>
-        <div class="text">
-          <h4>{{title}}</h4>
-          <p class="intro">
-            {{ description }}
-          </p>
-        </div>
       </div>
-    </div>
-  </b-col>
+    </b-col>
+  </div>
 </template>
 <script>
 export default {
@@ -149,4 +151,8 @@ export default {
       border-top-color: #ff9819;
     }
   }
+
+.row {
+  flex-wrap: unset;
+}
 </style>

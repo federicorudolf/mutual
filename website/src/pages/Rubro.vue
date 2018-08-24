@@ -27,6 +27,35 @@
                       Leer mas</button>
             </b-col>
           </b-row>
+          <b-row class="mob-r">
+            <b-col class="mob-card" v-for="item in items" :key="item.id">
+              <v-layout>
+                  <v-card>
+                    <v-card-media class="box-image">
+                      <img :src="item.Image" />
+                      <div class="overlay align-items-center justify-content-center d-flex">
+                        <div class="content">
+                          <div class="buttons">
+                            <button class="btn btn-template-outlined-white" @click="loadOffer(item.Id)">
+                              <i class="fas fa-book"></i>Leer mas
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </v-card-media>
+                    <v-card-title>
+                      <div>
+                        <h2>{{item.Empresa}}</h2>
+                        <p>{{item.Descripcion}}</p>
+                      </div>
+                    </v-card-title>
+                    <v-card-actions>
+                      <v-btn flat color="blue" @click="loadOffer(item.Id)"><i class="fas fa-book"></i>Leer mas</v-btn>
+                    </v-card-actions>
+                  </v-card>
+              </v-layout>
+            </b-col>
+          </b-row>
         </div>
       </section>
       <div v-else>
