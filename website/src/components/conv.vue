@@ -19,6 +19,8 @@
           <div class="direction">
             <div><i class="fas fa-map-marker-alt"></i>{{ location }}</div>
             <div><i class="fas fa-phone"></i>{{ phone }}</div>
+            <div><i class="fab fa-facebook"></i>{{facebook}}</div>
+            <div><i class="fab fa-firefox"></i>{{page}}</div>
           </div>
         </b-col>
       </b-row>
@@ -37,6 +39,8 @@ export default {
     description: '',
     location: '',
     phone: '',
+    facebook: '',
+    page: '',
     beneficios: [],
     field: '',
     id: '',

@@ -28,6 +28,7 @@ export default {
         navigation: true,
         autoplay: true,
         loop: true,
+        smartSpeed: 2500,
       });
     },
   },

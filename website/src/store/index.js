@@ -9,49 +9,13 @@ const store = new Vuex.Store({
     offers: [
       {
         id: '1',
-        imgSrc: 'http://adasba.org.ar/wp-content/uploads/2012/07/UNO.png',
-        title: 'Uno Bahia Club',
-        description: 'Natacion - Enseñanza, Gimnasia - Aparatos, Artes Marciales, Canchas de Futbol, Gimnasios, Clubes, Spa - Laval.',
-        location: 'Lavalle 605 - Bahía Blanca',
-        phone: '0291 450-1012',
-        beneficios: [
-          {
-            number: '',
-            text: 'Planes Personales',
-          },
-          {
-            number: '',
-            text: 'platino - oro - natacion',
-          },
-        ],
-        field: 'Deportes',
-      },
-      /*{
-        id: '2',
-        imgSrc: 'http://www.bahiablanca.satv.org.ar/inicio/images/ko%20sport%20TERMINADA.png',
-        title: 'KO Sport',
-        description: 'Lo mejor en materiales de Boxeo, Artes marciales, equipos de entrenamiento, nutricion y estado fisico. ',
-        location: 'Saavedra 111 - Bahía Blanca',
-        phone: '0291 452-7019',
-        beneficios: [
-          {
-            number: '10%',
-            text: 'de descuento',
-          },
-          {
-            number: '',
-            text: 'Con la compra de mas de $5000 hasta 3 cuotas sin interes',
-          },
-        ],
-        field: 'Indumentaria',
-      },*/
-      {
-        id: '3',
         imgSrc: 'http://www.previsorabeneficios.com.ar/wp-content/uploads/2016/12/No-End-600x600.jpg',
         title: 'No end',
         description: 'En No-End te esperamos con toda la indumentaria formal e informal. Destaca en el dia a dia, donde encontraras todo lo que necesitas para tus eventos y fiestas.',
         location: 'GÜEMES 15, Bahía Blanca',
         phone: '0291 474-0310',
+        facebook: '',
+        page: '',
         beneficios: [
           {
             number: '20% de descuento',
@@ -60,47 +24,36 @@ const store = new Vuex.Store({
         ],
         field: 'Indumentaria',
       },
-      /*{
-        id: '4',
-        imgSrc: 'http://www.motozone.com.ar/wp-content/uploads/2015/11/cropped-motz-favicon.png',
-        title: 'Moto Zone',
-        description: 'Concesionario Oficial: Mondial, Suzuki y Kawasaki.',
-        location: 'Villarino 555 - Bahía Blanca',
-        phone: '0291 451-6792',
-        beneficios: [
-          {
-            number: '12 cuotas',
-            text: 'sin interes',
-          },
-        ],
-        field: 'Otros',
-      },*/
       {
-        id: '6',
+        id: '2',
         imgSrc: require('../assets/tello.jpg'),
         title: 'Farmacia Tello',
         description: 'Farmacia - Perfumeria - Medicamentos encontralos en Farmacia Tello',
         location: 'Brown 599 - Bahía Blanca',
         phone: '0291 4550283',
+        facebook: '',
+        page: '',
         beneficios: [
           {
             number: 'Se adhiere 10%',
             text: 'Perfumeria',
           },
           {
-            number: '5% mas 15% (Mutual)',
+            number: '20% en',
             text: 'Farmacia.',
           },
         ],
         field: 'Otros',
       },
       {
-        id: '8',
+        id: '3',
         imgSrc: require('../assets/productores-del-sur.jpeg'),
         title: 'Productores del Sur',
         description: 'Te ofrecemos las mejores frutas y verduras frescas de estacion. Contamos con produccion en hortalizas propias de nuestra zona que caracterizan el armado de nuestras gondolas. Proveemos a reconocidos negocios gastronomicos de nuestra ciudad, siempre con la mejor calidad y tiempo de distribucion. Envio a domicilio sin cargo a particulares, anexos e instituciones. Visitanos en nuestros locales y anexos con la mejor atencion calificada en el rubro.',
         location: 'Vieytes 2201 Esquina Enrique Julio - Bahía Blanca',
         phone: '0291 5360672',
+        facebook: '',
+        page: '',
         beneficios: [
           {
             number: '20% de descuento',
@@ -110,31 +63,35 @@ const store = new Vuex.Store({
         field: 'Gastronomia',
       },
       {
-        id: '7',
+        id: '4',
         imgSrc: require('../assets/cuschie.jpg'),
         title: 'Farmacia Cuschie',
         description: 'Farmacia - Perfumeria - Medicamentos encontralos en Farmacia Cuschie',
         location: 'Don Bosco 1629 - Bahía Blanca',
         phone: '0291 4557844',
+        facebook: '',
+        page: '',
         beneficios: [
           {
             number: 'Se adhiere 10%',
             text: 'Perfumeria',
           },
           {
-            number: '5% mas 15% (Mutual)',
+            number: '20% en',
             text: 'Farmacia.',
           },
         ],
         field: 'Otros',
       },
       {
-        id: '9',
+        id: '5',
         imgSrc: require('../assets/rayuelas.jpg'),
         title: 'Casita de fiestas rayuelas',
         description: 'Contamos con una excelente animacion a cargo de profesores. Tenemos cama elastica, inflables, plaza blanda, pelotero, metegol, tejo de aire, mini disco, disfraces, patio con canchita, casita de madera. Capacidad para 30 grandes y 40 chicos. Wifi, aire acondicionado, servicios de cocina. Opcional menu de niños y adultos, barra de jugos y licuados, cumples tematicos (spa party, cocineritos, arte party). Reserva con anticipacion para congelar el precio actual.',
         location: 'Almafuerte 568 - Bahía Blanca',
         phone: '0291 5357216 / 0291 4366843',
+        facebook: '',
+        page: '',
         beneficios: [
           {
             number: '15% de descuento',
@@ -148,12 +105,14 @@ const store = new Vuex.Store({
         field: 'Otros',
       },
       {
-        id: '5',
+        id: '6',
         imgSrc: require('../assets/sos4.jpg'),
         title: 'SOS',
         description: 'Somos una empresa dedicada al reciclado de cartuchos de tinta y toner, venta de insumos de computacion e impresoras de volumen alto. Venta de resmas, mouse, teclados, pendrives, parlantes etc.',
         location: 'Berutti 81 - Bahía Blanca',
         phone: '0291 454-8030',
+        facebook: '',
+        page: '',
         beneficios: [
           {
             number: '15% de descuento',
@@ -161,29 +120,157 @@ const store = new Vuex.Store({
           },
           {
             number: '5% de descuento',
-            text: 'en equipos y tecnologia. Con una orden de compra hasta 3 cuotas sin interes. Los descuentos no son acumulables con otras promociones.',
+            text: 'en equipos y tecnologia.',
+          },
+          {
+            number: 'Con una orden de compra',
+            text: 'hasta 3 cuotas sin interes',
+          },
+          {
+            number: 'Los descuentos no son acumulables',
+            text: 'con otras promociones',
+          },
+        ],
+        field: 'Otros',
+      },
+      {
+        id: '7',
+        imgSrc: require('../assets/otero.jpg'),
+        title: 'Otero hombres',
+        description: 'En Otero hombres encontras todo lo que buscas para tu fiesta formal e informal, como camisas sport y de vestir, pantalones, jeans, sacos en todas sus lineas clasicas y entallada, ropa interior, zapatos y mucho mas. Veni a visitarnos. Tu consulta no nos molesta.',
+        location: 'Brown 201 - Bahía Blanca',
+        phone: '0291 4540275',
+        facebook: '',
+        page: '',
+        beneficios: [
+          {
+            number: '20% de descuento',
+            text: 'de contado efectivo.',
+          },
+        ],
+        field: 'Indumentaria',
+      },
+      {
+        id: '8',
+        imgSrc: require('../assets/elohim.jpg'),
+        title: 'Indumentaria Elohim',
+        description: 'Indumentaria para toda la familia. Tenemos disponibles talles grandes y traemos por encargue. Acompañamos el local con accesorios para el hogar y más.',
+        location: 'Chacabuco 3241 - Bahía Blanca',
+        phone: '0291 - 4464721',
+        facebook: '@ElohimIndumentaria',
+        page: 'Sin sitio web.',
+        beneficios: [
+          {
+            number: '10% de descuento',
+            text: 'de contado efectivo.',
+          },
+        ],
+        field: 'Indumentaria',
+      },
+      {
+        id: '9',
+        imgSrc: require('../assets/fullgarage.jpg'),
+        title: 'Full Garage',
+        description: 'Service completo, rotación alineación y balanceo con tecnología 3d, mecánica general. Vendemos cubiertas Dunlop, Firestone, Bridgestone y Michelin entre otras marcas, Venta de baterías Bosch, magneti marelli y nacionales. Toda la línea de aceites. Toda la línea de productos liqui moly (aditivos para aceites y combustibles) y toda la línea de Revigal (cosmética del automotor). Filtros Bosch, Mann y fram como primeras marcas entre otros. También disponemos de una amplia variedad de repuestos y kit de distribución.',
+        location: 'O`higgins 266 - Bahía Blanca',
+        phone: '0291 - 4522550 / 0291 - 4127248 /0291 - 5016092',
+        facebook: '@fullgarage ',
+        page: 'Sin sitio web.',
+        beneficios: [
+          {
+            number: '15% de descuento',
+            text: 'de contado efectivo.',
           },
         ],
         field: 'Otros',
       },
       {
         id: '10',
-        imgSrc: require('../assets/otero.jpg'),
-        title: 'Otero hombres',
-        description: 'En Otero hombres encontras todo lo que buscas para tu fiesta formal e informal, como camisas sport y de vestir, pantalones, jeans, sacos en todas sus lineas clasicas y entallada, ropa interior, zapatos y mucho mas. Veni a visitarnos. Tu consulta no nos molesta.',
-        location: 'Brown 201 - Bahía Blanca',
-        phone: '0291 4540275',
+        imgSrc: require('../assets/training-center-bahia.jpg'),
+        title: 'Training Center Bahia',
+        description: 'Entrena divertido, diversas actividades, aeróbicas, de tonificación, clases grupales, sala de musculación y Nutrición. Ellos están #Comprometidos con tus ganas de empezar- Te acompañan con un entrenamiento especialmente planificado para cumplir tus objetivos. Súmate y Empeza hoy. Te esperamos todos los días y todo el día de 7 a 22:30hs',
+        location: 'San Martin 358 - Bahía Blanca',
+        phone: '0291 - 155260843',
+        facebook: '@trainingcenterbahia',
+        page: 'www.trainingcenterbahia.com.ar',
         beneficios: [
           {
-            number: '20% de descuento',
-            text: 'de contado efectivo.',
+            number: 'NO PAGAS MATRICULA',
+            text: '',
           },
           {
-            number: '5% de descuento',
-            text: 'en equipos y tecnologia. Con una orden de compra hasta 3 cuotas sin interes. Los descuentos no son acumulables con otras promociones.',
+            number: '50% OF EN LA CUOTA',
+            text: '(CONVENIO DE 6 MESES POR MEDIO DE LA MUTUAL)',
           },
         ],
-        field: 'Indumentaria',
+        field: 'Deportes',
+      },
+      {
+        id: '11',
+        imgSrc: require('../assets/pinotea-fiestas.jpg'),
+        title: 'Casita de fiestas Pinotea',
+        description: 'Cuenta con una excelente animación para niños de 2 animadores hasta 30 chicos, la capacidad total es de 35 adultos y 35 niños. Servicio de cocina y en las mesas para que puedan disfrutar del evento. Piñata, sorpresa, animaciones y en cuanto a entretenimiento te ofrecemos pelotero, inflable, plaza blanda, metegol, música y luces, disfraces, títeres, pintura, cancha de futbol con césped sintético, cama elástica y juegos de plaza. Te esperamos...',
+        location: 'Holdich 758 - Bahía Blanca',
+        phone: '0291 - 4517619 / 0291 - 15614766 / 0291 - 15464785',
+        facebook: '@Pinoteacasitadefiestas',
+        page: 'Sin sitio web',
+        beneficios: [
+          {
+            number: '10% DE DESCUENTO',
+            text: 'en contado efectivo',
+          },
+          {
+            number: '3 CUOTAS SIN INTERES',
+            text: 'POR MEDIO DE LA MUTUAL',
+          },
+          {
+            number: 'CADA 5 FIESTITAS CONTRATADA POR LOS AFILIADOS DE LA',
+            text: 'MUTUAL HABRA 1 FIESTITA DE REGALO PARA SORTEAR.',
+          },
+        ],
+        field: 'Otros',
+      },
+      {
+        id: '12',
+        imgSrc: require('../assets/jotaese.jpg'),
+        title: 'Jotaese Tiendad de bebidad',
+        description: 'Tienda de bebidas, los mejores regalos!, cervezas artesanales. Venta por mayor y menor. Tomamos a consignación para todo tipo de evento. Veni que te vamos a brindar una solución.',
+        location: 'Gurruchaga 299 - Esquina San Martin - Gral. Daniel Cerri',
+        phone: '0291 - 6433919',
+        facebook: '@JotaeSe',
+        page: 'Sin sitio web',
+        beneficios: [
+          {
+            number: '5% DE DESCUENTO',
+            text: 'en contado efectivo en cervezas.',
+          },
+          {
+            number: '10% DE DESCUENTO',
+            text: 'en todo el resto.',
+          },
+        ],
+        field: 'Otros',
+      },
+      {
+        id: '13',
+        imgSrc: require('../assets/quincho-supeh.jpg'),
+        title: 'Quincho Supeh',
+        description: 'Ofrecemos salón para 40 personas. Con vajilla, heladera, freezer, El quincho cuenta con ventiladores y calefacción; muy buena iluminación. Cuenta con baños individuales para damas y caballeros, con el servicio de agua caliente. Dispone de una Parrilla de 1.60mts y una cocina con horno a disposición. Turnos disponibles, medio día y tarde - noche. Te esperamos... tu consulta no molesta.',
+        location: 'Las heras 353 - Bahia Blanca',
+        phone: '0291 - 4438833',
+        facebook: '@Juan Pablo Chirino',
+        page: 'Sin sitio web',
+        beneficios: [
+          {
+            number: '$1.400 DIAS SEMANA',
+            text: 'CONTADO EFECTIVO',
+          },
+          {
+            number: '$1.800 FIN DE SEMANA',
+            text: 'CONTADO EFECTIVO',
+          },
+        ],
+        field: 'Otros',
       },
     ],
   },

@@ -37,7 +37,7 @@
           </b-form-checkbox-group>
         </b-form-group>
         <v-btn class="btn btn-template-main"
-                  @click="send();">submit</v-btn>
+                  @click="send();">Enviar Formulario</v-btn>
       </form>
     </div>
     <v-snackbar

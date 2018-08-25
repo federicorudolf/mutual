@@ -21,8 +21,8 @@
                   </div>
                 </v-card-media>
                 <v-card-title>
-                  <div>
-                    <h4>Gastronomia</h4>
+                  <div class="v-card-title__item">
+                    <h4><i class="fas fa-utensils"></i>Gastronomia</h4>
                   </div>
                 </v-card-title>
               </v-card>
@@ -43,7 +43,7 @@
                 </v-card-media>
                 <v-card-title>
                   <div>
-                    <h4>Indumentaria</h4>
+                    <h4><i class="fas fa-tshirt"></i>Indumentaria</h4>
                   </div>
                 </v-card-title>
                 <v-card-actions></v-card-actions>
@@ -65,7 +65,7 @@
                 </v-card-media>
                 <v-card-title>
                   <div>
-                    <h4>Deportes</h4>
+                    <h4><i class="fas fa-futbol"></i>Deportes</h4>
                   </div>
                 </v-card-title>
                 <v-card-actions></v-card-actions>
@@ -87,7 +87,7 @@
                 </v-card-media>
                 <v-card-title>
                   <div>
-                    <h4>Varios</h4>
+                    <h4><i class="fas fa-cart-arrow-down"></i>Varios</h4>
                   </div>
                 </v-card-title>
                 <v-card-actions></v-card-actions>
@@ -147,5 +147,13 @@ export default {
 
   .homepage.owl-carousel {
     display: flex;
+  }
+
+  .v-card__title {
+    justify-content: center;
+  }
+
+  .v-card__title i {
+    margin-right: 5px;
   }
 </style>
