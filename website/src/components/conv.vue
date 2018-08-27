@@ -15,6 +15,7 @@
                 <p class="b-number">{{beneficio.number}}<label>{{beneficio.text}}</label></p>
               </li>
             </ul>
+            <div class="alert-conv"><i class="fas fa-info-circle"></i> Los descuentos no son acumulables con otras promociones.</div>
           </blockquote>
           <div class="direction">
             <div><i class="fas fa-map-marker-alt"></i>{{ location }}</div>
@@ -74,5 +75,16 @@ i {
 .b-number label {
   color: #000;
   margin-left: 3px;
+}
+
+.alert-conv {
+  padding: 10px;
+  background: #3386ff;
+  color: #FFF;
+  text-transform: uppercase;
+
+  i {
+    color: #FFF;
+  }
 }
 </style>

@@ -407,14 +407,6 @@ footer {
   }
 }
 
-.conv-desc {
-  p {
-    @include breakpoint(xs) {
-        text-align: left !important;
-    }
-  }
-}
-
 .v-cards-r {
   margin-top: 20px;
 
@@ -441,5 +433,26 @@ footer {
       .mob-card {
         margin-bottom: 20px;
       }
+  }
+}
+
+.alert-conv {
+  @include breakpoint(xs) {
+      text-align: center;
+  }
+}
+
+.paragraph-desk {
+  display: block;
+  @include breakpoint(xs) {
+      display: none;
+  }
+}
+
+.paragraph-mob {
+  display: none;
+  text-align: center;
+  @include breakpoint(xs) {
+      display: block;
   }
 }

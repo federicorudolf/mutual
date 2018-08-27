@@ -9,13 +9,13 @@ const store = new Vuex.Store({
     offers: [
       {
         id: '1',
-        imgSrc: 'http://www.previsorabeneficios.com.ar/wp-content/uploads/2016/12/No-End-600x600.jpg',
+        imgSrc: 'https://i.ytimg.com/vi/8QpV9HV2xqA/maxresdefault.jpg',
         title: 'No end',
-        description: 'En No-End te esperamos con toda la indumentaria formal e informal. Destaca en el dia a dia, donde encontraras todo lo que necesitas para tus eventos y fiestas.',
+        description: 'En No-End te esperamos con toda la Indumentaria formal te informal. Destaca en el día a día, eventos y fiestas.',
         location: 'GÜEMES 15, Bahía Blanca',
         phone: '0291 474-0310',
-        facebook: '',
-        page: '',
+        facebook: '@noendbahiablanca',
+        page: 'www.no-end.com.ar',
         beneficios: [
           {
             number: '20% de descuento',
@@ -32,7 +32,7 @@ const store = new Vuex.Store({
         location: 'Brown 599 - Bahía Blanca',
         phone: '0291 4550283',
         facebook: '',
-        page: '',
+        page: 'Sin sitio web.',
         beneficios: [
           {
             number: 'Se adhiere 10%',
@@ -49,11 +49,11 @@ const store = new Vuex.Store({
         id: '3',
         imgSrc: require('../assets/productores-del-sur.jpeg'),
         title: 'Productores del Sur',
-        description: 'Te ofrecemos las mejores frutas y verduras frescas de estacion. Contamos con produccion en hortalizas propias de nuestra zona que caracterizan el armado de nuestras gondolas. Proveemos a reconocidos negocios gastronomicos de nuestra ciudad, siempre con la mejor calidad y tiempo de distribucion. Envio a domicilio sin cargo a particulares, anexos e instituciones. Visitanos en nuestros locales y anexos con la mejor atencion calificada en el rubro.',
+        description: 'Te ofrecemos las mejores frutas y verduras frescas de estación. Contamos con producción en hortalizas propias de nuestra zona que caracterizan el armado de nuestras góndolas. Proveemos a reconocidas negocios gastronómicos de nuestra ciudad, siempre con la mejor calidad y tiempo de distribución. Envío a domicilio sin cargo a particulares, anexos e instituciones. Visítanos en nuestros locales y anexos con la mejor atención calificada en el rubro.',
         location: 'Vieytes 2201 Esquina Enrique Julio - Bahía Blanca',
         phone: '0291 5360672',
-        facebook: '',
-        page: '',
+        facebook: '@productoresdelsur',
+        page: 'Sin sitio web.',
         beneficios: [
           {
             number: '20% de descuento',
@@ -70,7 +70,7 @@ const store = new Vuex.Store({
         location: 'Don Bosco 1629 - Bahía Blanca',
         phone: '0291 4557844',
         facebook: '',
-        page: '',
+        page: 'Sin sitio web.',
         beneficios: [
           {
             number: 'Se adhiere 10%',
@@ -91,7 +91,7 @@ const store = new Vuex.Store({
         location: 'Almafuerte 568 - Bahía Blanca',
         phone: '0291 5357216 / 0291 4366843',
         facebook: '',
-        page: '',
+        page: 'Sin sitio web.',
         beneficios: [
           {
             number: '15% de descuento',
@@ -108,11 +108,11 @@ const store = new Vuex.Store({
         id: '6',
         imgSrc: require('../assets/sos4.jpg'),
         title: 'SOS',
-        description: 'Somos una empresa dedicada al reciclado de cartuchos de tinta y toner, venta de insumos de computacion e impresoras de volumen alto. Venta de resmas, mouse, teclados, pendrives, parlantes etc.',
+        description: 'Somo una empresa dedicada al reciclado de cartuchos de tinta y tóner, venta de insumos de computación e impresoras de volumen alto. Venta de resmas, mouse, teclados, pendrives, parlantes etc.',
         location: 'Berutti 81 - Bahía Blanca',
         phone: '0291 454-8030',
-        facebook: '',
-        page: '',
+        facebook: '@sosricicladoexpress',
+        page: 'www.sosricicladoexpress.com',
         beneficios: [
           {
             number: '15% de descuento',
@@ -137,11 +137,11 @@ const store = new Vuex.Store({
         id: '7',
         imgSrc: require('../assets/otero.jpg'),
         title: 'Otero hombres',
-        description: 'En Otero hombres encontras todo lo que buscas para tu fiesta formal e informal, como camisas sport y de vestir, pantalones, jeans, sacos en todas sus lineas clasicas y entallada, ropa interior, zapatos y mucho mas. Veni a visitarnos. Tu consulta no nos molesta.',
+        description: 'En Otero hombres vas a encontrar todo lo q buscas para tu fiesta formal o informal, cómo, camisas Sport y de vestir, pantalones, jeans, sacos en todas sus línea clásica y entallada, ropa interior, zapatos y mucho más. Veni a visitarnos Tu consulta no nos molesta.',
         location: 'Brown 201 - Bahía Blanca',
         phone: '0291 4540275',
-        facebook: '',
-        page: '',
+        facebook: '@Otero.H',
+        page: 'Sin sitio web.',
         beneficios: [
           {
             number: '20% de descuento',
@@ -233,7 +233,7 @@ const store = new Vuex.Store({
       {
         id: '12',
         imgSrc: require('../assets/jotaese.jpg'),
-        title: 'Jotaese Tiendad de bebidad',
+        title: 'Jotaese Tienda de bebidas',
         description: 'Tienda de bebidas, los mejores regalos!, cervezas artesanales. Venta por mayor y menor. Tomamos a consignación para todo tipo de evento. Veni que te vamos a brindar una solución.',
         location: 'Gurruchaga 299 - Esquina San Martin - Gral. Daniel Cerri',
         phone: '0291 - 6433919',

@@ -11,11 +11,15 @@
           <i class="fas fa-info-circle"></i>
           <h4>Acceso al beneficio</h4>
         </div>
-        <p>
+        <p class="paragraph-desk">
           Descuento exclusivo para trabajadores de empresas adherentes a la Asociacion Mutual Unidad 1° de Noviembre,
         </p>
-        <p>
+        <p class="paragraph-desk">
           que se identifiquen con su carnet y ultimo recibo de sueldo.
+        </p>
+
+        <p class="paragraph-mob">
+          Descuento exclusivo para trabajadores de empresas adherentes a la Asociacion Mutual Unidad 1° de Noviembre, que se identifiquen con su carnet y ultimo recibo de sueldo.
         </p>
       </div>
     </div>
