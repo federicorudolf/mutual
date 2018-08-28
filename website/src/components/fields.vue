@@ -66,6 +66,27 @@
           </div>
         </div>
       </b-col>
+      <b-col class="box-field" @click="navigateToField('salones')">
+        <h2>Salones y Casita de fiesta</h2>
+        <div class="box-image">
+          <div class="image">
+            <img class="img-fluid" src="http://www.megaeventossur.com.ar/wp-content/uploads/slider-santos-lugares.jpg" />
+          </div>
+          <div class="overlay d-flex align-items-center justify-content-center">
+            <div class="overlay_content">
+              <div class="overlay_group">
+                <h3>Salones y Casita de fiesta</h3>
+                <div class="overlay_text">
+                  <button @click="navigateToField('salones')"
+                          class="btn btn-template-outlined-white">
+                          <i class="fas fa-list-ul"></i>Ver lista
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </b-col>
       <b-col class="box-field" @click="navigateToField('otros')">
         <h2>Otros</h2>
         <div class="box-image">

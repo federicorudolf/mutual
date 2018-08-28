@@ -94,6 +94,14 @@
               </v-card>
           </v-layout>
         </b-col>
+        <div class="button-field">
+          <router-link to="/convenios"
+                           tag="button"
+                           class="btn btn-template-main"
+                           active-class="active">
+                           <i class="fab fa-wpforms"></i> Ver mas rubros..
+          </router-link>
+        </div>
       </b-row>
     </div>
     <app-contact class="animated slideInRight delay-2s"></app-contact>

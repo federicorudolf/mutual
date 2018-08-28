@@ -102,7 +102,7 @@ const store = new Vuex.Store({
             text: 'por medio de la mutual.',
           },
         ],
-        field: 'Otros',
+        field: 'Salones',
       },
       {
         id: '6',
@@ -228,7 +228,7 @@ const store = new Vuex.Store({
             text: 'MUTUAL HABRA 1 FIESTITA DE REGALO PARA SORTEAR.',
           },
         ],
-        field: 'Otros',
+        field: 'Salones',
       },
       {
         id: '12',
@@ -268,6 +268,23 @@ const store = new Vuex.Store({
           {
             number: '$1.800 FIN DE SEMANA',
             text: 'CONTADO EFECTIVO',
+          },
+        ],
+        field: 'Salones',
+      },
+      {
+        id: '14',
+        imgSrc: require('../assets/tartaglia.jpg'),
+        title: 'Tartaglia Christian Ignacio Odontólogo',
+        description: 'Te ofrece la atencion personalizada y de alto nivel que mereces, por medio de este y muchos otros servicios. Tu salud esta en las mejores manos gracias a la experiencia de nuestro equipo y los tratamientos de punta que ofrecemos.',
+        location: 'Saavedra 299 esquina Fitz Roy- Bahia Blanca',
+        phone: '0291 4533331 / 0291 5091602',
+        facebook: '-',
+        page: 'Sin sitio web',
+        beneficios: [
+          {
+            number: 'Financiacion',
+            text: 'hasta 12 cuotas.',
           },
         ],
         field: 'Otros',
