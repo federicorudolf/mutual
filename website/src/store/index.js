@@ -11,7 +11,7 @@ const store = new Vuex.Store({
         id: '1',
         imgSrc: 'https://i.ytimg.com/vi/8QpV9HV2xqA/maxresdefault.jpg',
         title: 'No end',
-        description: 'En No-End te esperamos con toda la Indumentaria formal te informal. Destaca en el día a día, eventos y fiestas.',
+        description: 'En No-End te esperamos con toda la Indumentaria formal e informal. Destaca en el día a día, eventos y fiestas.',
         location: 'GÜEMES 15, Bahía Blanca',
         phone: '0291 474-0310',
         facebook: '@noendbahiablanca',
@@ -20,6 +20,10 @@ const store = new Vuex.Store({
           {
             number: '20% de descuento',
             text: 'con la compra contado efectivo.',
+          },
+          {
+            number: '3 Cuotas sin interes',
+            text: 'por medio de la mutual.',
           },
         ],
         field: 'Indumentaria',

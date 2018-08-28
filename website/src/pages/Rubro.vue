@@ -1,9 +1,15 @@
 <template>
   <div class="container">
       <app-head v-bind:title="title"></app-head>
-      <section v-if="items.length > 0">
+      <div class="search-container">
+        <v-text-field
+          v-model="search"
+          label="¿Que estas buscando?"
+        ></v-text-field>
+      </div>
+      <section v-if="filterConvs.length > 0">
         <div class="container">
-          <b-row class="r_row" v-for="item in items" :key="item.id">
+          <b-row class="r_row" v-for="item in filterConvs" :key="item.id">
             <b-col class="r-col">
               <div class="box-image">
                 <img :src="item.Image" />
@@ -28,7 +34,7 @@
             </b-col>
           </b-row>
           <b-row class="mob-r">
-            <b-col class="mob-card" v-for="item in items" :key="item.id">
+            <b-col class="mob-card" v-for="item in filterConvs" :key="item.id">
               <v-layout>
                   <v-card>
                     <v-card-media class="box-image">
@@ -77,6 +83,7 @@ export default {
     return {
       title: '',
       items: [],
+      search: '',
       emptyMessage: 'Por ahora no hay convenios para este rubro!',
     };
   },
@@ -105,6 +112,13 @@ export default {
   components: {
     appHead: headingTitle,
     appCard: card,
+  },
+  computed: {
+    filterConvs: function() {
+      return this.items.filter((item) => {
+        return item.Empresa.toLowerCase().match(this.search);
+      });
+    }
   },
   created() {
     this.title = this.$route.params.id;
@@ -171,5 +185,11 @@ img {
 
 .convenio-c {
   padding-top: 55px;
+}
+
+.search-container {
+  background: #03A9F4;
+  padding: 20px;
+  color: #FFF;
 }
 </style>
