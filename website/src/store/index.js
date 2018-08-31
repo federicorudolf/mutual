@@ -115,8 +115,8 @@ const store = new Vuex.Store({
         description: 'Somo una empresa dedicada al reciclado de cartuchos de tinta y tóner, venta de insumos de computación e impresoras de volumen alto. Venta de resmas, mouse, teclados, pendrives, parlantes etc.',
         location: 'Berutti 81 - Bahía Blanca',
         phone: '0291 454-8030',
-        facebook: '@sosricicladoexpress',
-        page: 'www.sosricicladoexpress.com',
+        facebook: '@sosrecicladoexpress',
+        page: 'www.sosrecicladoexpress.com',
         beneficios: [
           {
             number: '15% de descuento',
@@ -144,7 +144,7 @@ const store = new Vuex.Store({
         description: 'En Otero hombres vas a encontrar todo lo q buscas para tu fiesta formal o informal, cómo, camisas Sport y de vestir, pantalones, jeans, sacos en todas sus línea clásica y entallada, ropa interior, zapatos y mucho más. Veni a visitarnos Tu consulta no nos molesta.',
         location: 'Brown 201 - Bahía Blanca',
         phone: '0291 4540275',
-        facebook: '@Otero.H',
+        facebook: '-',
         page: 'Sin sitio web.',
         beneficios: [
           {
