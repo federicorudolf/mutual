@@ -485,3 +485,11 @@ footer {
     }
   }
 }
+
+.bg-container {
+  p {
+    @include breakpoint(xs) {
+        font-size: 1rem !important;
+    }
+  }
+}

@@ -67,7 +67,7 @@
         </div>
       </b-col>
       <b-col class="box-field" @click="navigateToField('salones')">
-        <h2>Salones y Casita de fiesta</h2>
+        <h2>Salones y Casita de fiestas</h2>
         <div class="box-image">
           <div class="image">
             <img class="img-fluid" src="http://www.megaeventossur.com.ar/wp-content/uploads/slider-santos-lugares.jpg" />
