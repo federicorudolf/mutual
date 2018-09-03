@@ -458,12 +458,16 @@ const store = new Vuex.Store({
         id: '24',
         imgSrc: require('../assets/epa.png'),
         title: 'COMIDAS RAPIDAS "EPA" FAST FOOD & DRINKS',
-        description: 'En nuestro local encontraras un servicio de comidas rápidas de calidad, en un ambiente ameno y relajado, brindando una experiencia única para nuestros comensales. Nuestros productos recorren diferentes opciones tradicionalmente conocidas como comida rápida. Nos diferencia un producto de calidad, la utilización ingredientes seleccionados y el diseño de un menú propio. Nuestro menú se compone del tipo de platos conocidos como "comida rápida". Incluye: sándwich de lomo, sándwich de bondiola, sándwich de milanesa de pollo, sándwich de milanesa de carne vacuna, hamburguesas, panchos y ensaladas. Contamos con un servicio de cafetería y en cuanto a bebidas, se incluye la venta de bebidas sin alcohol (jugos, gaseosas y agua), con la incorporación de la cerveza tirada de la mano de Barbarroja, así como también de sus botellas con diferentes sabores.',
+        description: 'En nuestro local encontraras un servicio de comidas rápidas de calidad, en un ambiente ameno y relajado, brindando una experiencia única para nuestros comensales. Nuestros productos recorren diferentes opciones tradicionalmente conocidas como "comida rápida". Nos diferencia un producto de calidad, la utilización ingredientes seleccionados y el diseño de un menú propio. Nuestro menú se compone del tipo de platos conocidos como "comida rápida". Incluye: sándwich de lomo, sándwich de bondiola, sándwich de milanesa de pollo, sándwich de milanesa de carne vacuna, hamburguesas, panchos y ensaladas. Contamos con un servicio de cafetería y en cuanto a bebidas, se incluye la venta de bebidas sin alcohol (jugos, gaseosas y agua), con la incorporación de la cerveza tirada de la mano de Barbarroja, así como también de sus botellas con diferentes sabores.',
         location: 'Av Alem esquina San Juan - Bahia Blanca',
         phone: '291 - 4418457',
         facebook: '@epabahia',
         page: 'Sin sitio web',
         beneficios: [
+          {
+            number: 'Retirando y con tu tarjeta',
+            text: '"Yo soy amigo de EPA"',
+          },
           {
             number: '10% de descuento',
             text: 'contado efectivo.',
@@ -616,6 +620,40 @@ const store = new Vuex.Store({
           },
         ],
         field: 'Turismo',
+      },
+      {
+        id: '31',
+        imgSrc: require('../assets/bhi-viajes.png'),
+        title: 'BHI VIAJES Y TURISMO',
+        description: '',
+        location: 'Caronti 127 - Bahia Blanca',
+        phone: '0291 - 4566670',
+        facebook: '@bhiviajesbahia',
+        page: 'www.bviajes.tur.ar',
+        beneficios: [
+          {
+            number: '10% de descuento',
+            text: 'contado efectivo',
+          },
+        ],
+        field: 'Turismo',
+      },
+      {
+        id: '32',
+        imgSrc: require('../assets/lavadero-argentino.jpg'),
+        title: 'LAVADERO ARGENTINO',
+        description: 'Lavadero Argentino ofrece el servicio convencional de lavado de carrocería Interior y exterior, abrimos de lunes a sábado. Usamos productos de primer nivel para que su auto quede de la mejor manera. También te ofrecemos los servicios de, Lavado de motor, Lavado de chasis, Limpieza profunda de tapizados, Encerado, Lustrado + Pulido.',
+        location: 'Brandsen 610 - Bahia Blanca',
+        phone: '0291 - 4524249 / 291 - 5783307',
+        facebook: '-',
+        page: 'Sin sitio web',
+        beneficios: [
+          {
+            number: '20% de descuento',
+            text: 'contado efectivo',
+          },
+        ],
+        field: 'Otros',
       },
     ],
   },
