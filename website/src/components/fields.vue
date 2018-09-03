@@ -67,7 +67,7 @@
         </div>
       </b-col>
       <b-col class="box-field" @click="navigateToField('salones')">
-        <h2>Salones y Casita de fiestas</h2>
+        <h2>Salones y Casitas de fiestas</h2>
         <div class="box-image">
           <div class="image">
             <img class="img-fluid" src="http://www.megaeventossur.com.ar/wp-content/uploads/slider-santos-lugares.jpg" />
@@ -75,7 +75,7 @@
           <div class="overlay d-flex align-items-center justify-content-center">
             <div class="overlay_content">
               <div class="overlay_group">
-                <h3>Salones y Casita de fiesta</h3>
+                <h3>Salones y Casitas de fiestas</h3>
                 <div class="overlay_text">
                   <button @click="navigateToField('salones')"
                           class="btn btn-template-outlined-white">
@@ -87,8 +87,50 @@
           </div>
         </div>
       </b-col>
+      <b-col class="box-field" @click="navigateToField('turismo')">
+        <h2>Turismo</h2>
+        <div class="box-image">
+          <div class="image">
+            <img class="img-fluid" src="http://www.asaasholidayplanner.com/images/banner_1.jpg" />
+          </div>
+          <div class="overlay d-flex align-items-center justify-content-center">
+            <div class="overlay_content">
+              <div class="overlay_group">
+                <h3>Turismo</h3>
+                <div class="overlay_text">
+                  <button @click="navigateToField('turismo')"
+                          class="btn btn-template-outlined-white">
+                          <i class="fas fa-list-ul"></i>Ver lista
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </b-col>
+      <b-col class="box-field" @click="navigateToField('belleza')">
+        <h2>Salud y Belleza</h2>
+        <div class="box-image">
+          <div class="image">
+            <img class="img-fluid" src="https://i.ytimg.com/vi/lL0jRS18F2E/maxresdefault.jpg" />
+          </div>
+          <div class="overlay d-flex align-items-center justify-content-center">
+            <div class="overlay_content">
+              <div class="overlay_group">
+                <h3>Salud y Belleza</h3>
+                <div class="overlay_text">
+                  <button @click="navigateToField('turismo')"
+                          class="btn btn-template-outlined-white">
+                          <i class="fas fa-list-ul"></i>Ver lista
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </b-col>
       <b-col class="box-field" @click="navigateToField('otros')">
-        <h2>Otros</h2>
+        <h2>Varios</h2>
         <div class="box-image">
           <div class="image">
             <img class="img-fluid" src="http://www.hotelroomsearch.net/im/hotels/es/shopping-center-1.jpg" />
@@ -96,7 +138,7 @@
           <div class="overlay d-flex align-items-center justify-content-center">
             <div class="overlay_content">
               <div class="overlay_group">
-                <h3>Otros</h3>
+                <h3>Varios</h3>
                 <div class="overlay_text">
                   <button @click="navigateToField('otros')"
                           class="btn btn-template-outlined-white">
