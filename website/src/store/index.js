@@ -623,23 +623,6 @@ const store = new Vuex.Store({
       },
       {
         id: '31',
-        imgSrc: require('../assets/bhi-viajes.png'),
-        title: 'BHI VIAJES Y TURISMO',
-        description: '',
-        location: 'Caronti 127 - Bahia Blanca',
-        phone: '0291 - 4566670',
-        facebook: '@bhiviajesbahia',
-        page: 'www.bviajes.tur.ar',
-        beneficios: [
-          {
-            number: '10% de descuento',
-            text: 'contado efectivo',
-          },
-        ],
-        field: 'Turismo',
-      },
-      {
-        id: '32',
         imgSrc: require('../assets/lavadero-argentino.jpg'),
         title: 'LAVADERO ARGENTINO',
         description: 'Lavadero Argentino ofrece el servicio convencional de lavado de carrocería Interior y exterior, abrimos de lunes a sábado. Usamos productos de primer nivel para que su auto quede de la mejor manera. También te ofrecemos los servicios de, Lavado de motor, Lavado de chasis, Limpieza profunda de tapizados, Encerado, Lustrado + Pulido.',
