@@ -111,7 +111,7 @@ const store = new Vuex.Store({
       {
         id: '6',
         imgSrc: require('../assets/sos4.jpg'),
-        title: 'SOS',
+        title: 'SOS Reciclado Express',
         description: 'Somo una empresa dedicada al reciclado de cartuchos de tinta y tóner, venta de insumos de computación e impresoras de volumen alto. Venta de resmas, mouse, teclados, pendrives, parlantes etc.',
         location: 'Berutti 81 - Bahía Blanca',
         phone: '0291 454-8030',

@@ -15,7 +15,7 @@
             </div>
             <div>
               <p class="title-info"><i class="fas fa-mobile-alt"></i>Telefono:</p>
-              <p class="info">291 - 42231212</p>
+              <p class="info">291 - 4278722</p>
             </div>
             <div>
               <p class="title-info"><i class="fas fa-map-marked"></i>Ciudad:</p>
