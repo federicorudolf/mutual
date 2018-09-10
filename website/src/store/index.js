@@ -474,7 +474,7 @@ const store = new Vuex.Store({
           },
           {
             number: 'El dia de tu cumple te invitamos',
-            text: 'tu cena y el brindis.',
+            text: 'tu cena y el brindis para vos y un amigo.',
           },
           {
             number: 'Descuentos exclusivos',
