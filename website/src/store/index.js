@@ -690,7 +690,7 @@ const store = new Vuex.Store({
             text: 'por medio de la mutual.',
           },
         ],
-        field: 'Otros',
+        field: 'Belleza',
       },
       {
         id: '34',
@@ -733,6 +733,77 @@ const store = new Vuex.Store({
           },
         ],
         field: 'Deportes',
+      },
+      {
+        id: '36',
+        imgSrc: require('../assets/lavadero-argentino.jpg'),
+        title: 'LAVADERO ARGENTINO',
+        description: 'Lavadero Argentino ofrece el servicio convencional de lavado de carrocería Interior y exterior, abrimos de lunes a sábado. Usamos productos de primer nivel para que su auto quede de la mejor manera. También te ofrecemos los servicios de, Lavado de motor, Lavado de chasis, Limpieza profunda de tapizados, Encerado, Lustrado + Pulido.',
+        location: 'Brandsen 610 - Bahia Blanca',
+        phone: '0291 - 4524249 / 291 - 5783307',
+        facebook: '-',
+        page: 'Sin sitio web',
+        beneficios: [
+          {
+            number: '20% de descuento',
+            text: 'contado efectivo',
+          },
+        ],
+        field: 'Otros',
+      },
+      {
+        id: '37',
+        imgSrc: require('../assets/frigorifico-la-mascota.jpg'),
+        title: 'FRIGORIFICO LA MASCOTA',
+        description: 'En nuestro local encontraras los mejores cortes de carne vacuna, corderos, cerdo, achuras y chacinados artesanales de elaboración propia. Productos totalmente garantizados en calidad y sanidad. Te esperamos con la mejor atención y cordialidad.',
+        location: 'Av. Colon 2502 - Bahia Blanca',
+        phone: '0291 - 6432222',
+        facebook: '-',
+        page: '@frigorifico la mascota',
+        beneficios: [
+          {
+            number: '10% de descuento',
+            text: 'contado efectivo',
+          },
+          {
+            number: '15% de descuento contado efectivo',
+            text: 'todos los domingos en pulpas.',
+          },
+          {
+            number: '2 o 3 cuotas sin interes',
+            text: 'por medio de la mutual.',
+          },
+        ],
+        field: 'Gastronomia',
+      },
+      {
+        id: '38',
+        imgSrc: require('../assets/pau-eventos.png'),
+        title: 'PAU EVENTOS SERVICIOS INTEGRALES',
+        description: 'En Pau Eventos, te ofrecemos un servició integral para todo tipo de evento, Casamientos, 15 Años, Café Break, Reuniones Empresariales. Para brindarte el mejor evento, contamos con el servicio del salón ARIANO, DJ, sonido e Iluminación, Barra de Tragos móviles, fotografía y filmación (Jorge Ordoñez), peinados y make up (Merlina´s). Comunícate tenemos la propuesta acorde a tu necesidad.',
+        location: 'Bravard 160 - Bahia Blanca',
+        phone: '0291 - 5012217',
+        facebook: '-',
+        page: '@pau eventos',
+        beneficios: [
+          {
+            number: '10% de descuento',
+            text: 'contado efectivo',
+          },
+          {
+            number: '30% de descuento',
+            text: 'en servicio de barra.',
+          },
+          {
+            number: 'Contratando el servicio integral',
+            text: 'la torta del evento (2 pisos) sin cargo!!.',
+          },
+          {
+            number: 'Hasta 6 cuotas sin interes',
+            text: 'por medio de la mutual.',
+          },
+        ],
+        field: 'Salones',
       },
     ],
   },
