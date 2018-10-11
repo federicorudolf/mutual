@@ -805,6 +805,27 @@ const store = new Vuex.Store({
         ],
         field: 'Salones',
       },
+      {
+        id: '39',
+        imgSrc: require('../assets/pintureria-fernandez.jpg'),
+        title: 'FERNANDEZ PINTURERIA',
+        description: 'Te ofrecemos soluciones al momento de pintar su obra, asesoramiento técnico personalizado, simulador de color con foto real, contamos con toda la línea de productos Tersuave. Disponemos de excelente atención en nuestras 3 sucursales.',
+        location: 'Sarmiento 1330 / Av. Alem 1936 / Soler 493 Esq. Lavalle - Bahia Blanca',
+        phone: '0291 453-5203 / 0291 488-0022 / 0291 451-5397',
+        facebook: '-',
+        page: '-',
+        beneficios: [
+          {
+            number: '3 de cuotas sin interes',
+            text: 'por medio de la mutual.',
+          },
+          {
+            number: '30% de descuento',
+            text: 'efectivo',
+          },
+        ],
+        field: 'Otros',
+      },
     ],
   },
 });
