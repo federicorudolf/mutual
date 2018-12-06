@@ -327,7 +327,7 @@ const store = new Vuex.Store({
         id: '17',
         imgSrc: require('../assets/motozone.png'),
         title: 'Motozone',
-        description: 'En nuestro local vas a encintras las mejores marcas del mercado, como la línea de Zanella: Zb 110, Rx 150, Ceccato 150, ZR 150; en la línea Motomel: Blitz 110, S2 150, Skua 150, 200, 250; en la línea Benelli: Tnt 15, 25, 300, 302, y también en la línea Suzuki Ax 100, En 125 y Gixxer 150. Te esperamos.',
+        description: 'En nuestro local vas a encontrar las mejores marcas del mercado, como la línea de Zanella: Zb 110, Rx 150, Ceccato 150, ZR 150; en la línea Motomel: Blitz 110, S2 150, Skua 150, 200, 250; en la línea Benelli: Tnt 15, 25, 300, 302, y también en la línea Suzuki Ax 100, En 125 y Gixxer 150. Te esperamos.',
         location: 'Corrientes 401 y Villarino 555 - Bahia Blanca',
         phone: '0291 - 5120302',
         facebook: '@motozonebahia',
@@ -341,6 +341,14 @@ const store = new Vuex.Store({
             number: 'Te financiamos tu moto',
             text: 'en 12 cuotas por medio de la mutual.',
           },
+          {
+            number: '15% de descuento',
+            text: 'en el service de tu moto, contado efectivo.',
+          },
+          {
+            number: '(Presentando Carnet de la Mutual y tarjeta verde a tu nombre)',
+            text: '10% en repuestos y accesorios, contado efectivo',
+          }
         ],
         field: 'Otros',
       },
@@ -780,7 +788,7 @@ const store = new Vuex.Store({
         id: '38',
         imgSrc: require('../assets/pau-eventos.png'),
         title: 'PAU EVENTOS SERVICIOS INTEGRALES',
-        description: 'En Pau Eventos, te ofrecemos un servició integral para todo tipo de evento, Casamientos, 15 Años, Café Break, Reuniones Empresariales. Para brindarte el mejor evento, contamos con el servicio del salón ARIANO, DJ, sonido e Iluminación, Barra de Tragos móviles, fotografía y filmación (Jorge Ordoñez), peinados y make up (Merlina´s). Comunícate tenemos la propuesta acorde a tu necesidad.',
+        description: 'En Pau Eventos, te ofrecemos un servició integral para todo tipo de evento, Casamientos, 15 Años, Coofee Break, Reuniones Empresariales. Para brindarte el mejor evento, contamos con el servicio del salón ARIANO, DJ, sonido e Iluminación, Barra de Tragos móviles, fotografía y filmación (Jorge Ordoñez), peinados y make up (Merlina´s). Comunícate tenemos la propuesta acorde a tu necesidad.',
         location: 'Bravard 160 - Bahia Blanca',
         phone: '0291 - 5012217',
         facebook: '-',
@@ -802,6 +810,18 @@ const store = new Vuex.Store({
             number: 'Hasta 6 cuotas sin interes',
             text: 'por medio de la mutual.',
           },
+          {
+            number: '10%',
+            text: 'Tortas infantiles, Casamientos y 15 años contado efectivo.',
+          },
+          {
+            number: '20%',
+            text: 'Si a la torta le sumas la mesa dulce',
+          },
+          {
+            number: '10%',
+            text: 'Candy Bar',
+          }
         ],
         field: 'Salones',
       },
@@ -822,6 +842,23 @@ const store = new Vuex.Store({
           {
             number: '30% de descuento',
             text: 'efectivo',
+          },
+        ],
+        field: 'Otros',
+      },
+      {
+        id: '40',
+        imgSrc: require('../assets/figueroa_nancy.png'),
+        title: 'FIGUEROA NANCY (MASAJES – REFLEXOLOGÍA)',
+        description: 'En Nuestra sala te brindamos, Terapias para el Bienestar, Masajes, Reflexología podal reflexología facial y craneal, Armonización con péndulo, Reiki, Sesiones y Cursos.',
+        location: 'La Valle 84 - Piso 5 / Dpto "B" - Bahia Blanca',
+        phone: '0291 4238943',
+        facebook: '@SAT NAM-Nancy Figueroa',
+        page: '-',
+        beneficios: [
+          {
+            number: '20% de descuento',
+            text: 'contado efectivo',
           },
         ],
         field: 'Otros',
