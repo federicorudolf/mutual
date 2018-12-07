@@ -343,11 +343,11 @@ const store = new Vuex.Store({
           },
           {
             number: '15% de descuento',
-            text: 'en el service de tu moto, contado efectivo.',
+            text: 'en el service de tu moto, contado efectivo. (Presentando Carnet de la Mutual y Tarjeta Verde a Tu Nombre)',
           },
           {
-            number: '(Presentando Carnet de la Mutual y tarjeta verde a tu nombre)',
-            text: '10% en repuestos y accesorios, contado efectivo',
+            number: '10% en repuestos',
+            text: 'y accesorios, contado efectivo',
           }
         ],
         field: 'Otros',
