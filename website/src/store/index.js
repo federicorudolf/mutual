@@ -861,8 +861,25 @@ const store = new Vuex.Store({
             text: 'contado efectivo',
           },
         ],
-        field: 'Otros',
+        field: 'Belleza',
       },
+      {
+        id: '41',
+        imgSrc: require('../assets/matias-emilio-fernandez.png'),
+        title: 'DR. MATIAS EMILIO FERNANDEZ - ASESORAMIENTO JURIDICO',
+        description: 'En nuestro estudio brindamos asistencia y asesoramiento jurídico integral poniendo todos nuestros recursos y conocimiento al servicio del cliente, procurando dar una respuesta eficaz frente a sus inquietudes, obrando con la mayor responsabilidad y compromiso. Atendemos cuestiones de índole laboral, accidentes de trabajos, daños y perjuicios, civiles y comerciales, familia y sucesiones. No dude en consultarnos.',
+        location: 'Ing. Luiggi 87 - Bahia Blanca',
+        phone: '0291 – 154711455',
+        facebook: '-',
+        page: '-',
+        beneficios: [
+          {
+            number: '-',
+            text: '',
+          },
+        ],
+        field: 'Otros',
+      }
     ],
   },
 });
