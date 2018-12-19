@@ -747,7 +747,7 @@ const store = new Vuex.Store({
         imgSrc: require('../assets/lavadero-argentino.jpg'),
         title: 'LAVADERO ARGENTINO',
         description: 'Lavadero Argentino ofrece el servicio convencional de lavado de carrocería Interior y exterior, abrimos de lunes a sábado. Usamos productos de primer nivel para que su auto quede de la mejor manera. También te ofrecemos los servicios de, Lavado de motor, Lavado de chasis, Limpieza profunda de tapizados, Encerado, Lustrado + Pulido.',
-        location: 'Brandsen 610 - Bahia Blanca',
+        location: 'Alsina y Corrientes - Bahia Blanca',
         phone: '0291 - 4524249 / 291 - 5783307',
         facebook: '-',
         page: 'Sin sitio web',
@@ -771,11 +771,7 @@ const store = new Vuex.Store({
         beneficios: [
           {
             number: '10% de descuento',
-            text: 'contado efectivo',
-          },
-          {
-            number: '15% de descuento contado efectivo',
-            text: 'todos los domingos en pulpas.',
+            text: 'contado efectivo (VENTA POR MAYOR, COMPRA MINIMA 5KG)',
           },
           {
             number: '2 o 3 cuotas sin interes',
