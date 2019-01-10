@@ -875,6 +875,27 @@ const store = new Vuex.Store({
           },
         ],
         field: 'Otros',
+      },
+      {
+        id: '42',
+        imgSrc: require('../assets/qualita_sport.jpg'),
+        title: 'QUALITA SPORT FABRICANTES DE INDUMETARIA Y ACCESORIOS',
+        description: 'Somos fabricantes de camisetas full a color, short, pecheras Chombas, buzos, conjuntos largos, media, gorras, pelotas y mucho más. También realizamos sublimación full a color, bordados y estampados.',
+        location: 'Teniente Farias 1378 - Bahia Blanca',
+        phone: '0291 – 155031368',
+        facebook: '-',
+        page: '-',
+        beneficios: [
+          {
+            number: '15% de descuento',
+            text: 'contado efectivo',
+          },
+          {
+            number: 'Hasta 2 o 3 cuotas sin Interés',
+            text: 'por medio de la mutual',
+          }
+        ],
+        field: 'Deportes',
       }
     ],
   },
