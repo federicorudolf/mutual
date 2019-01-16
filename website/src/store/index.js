@@ -895,7 +895,61 @@ const store = new Vuex.Store({
             text: 'por medio de la mutual',
           }
         ],
-        field: 'Deportes',
+        field: 'Indumentaria',
+      },
+      {
+        id: '43',
+        imgSrc: require('../assets/mega_peper.png'),
+        title: 'CENTRO COMERCIAL MEGA PAPER',
+        description: 'En nuestro Local encontraras todo lo relacionado en: Juguetería, Librería comercia y escolar. Marroquinería (valijas, bolsos de viajes, deportivos, mochilas escolares, deportivas y de alpinismo, carteras de vestir y casual). Tecnología (parlantes, accesorios celulares, auriculares, monitores, equipos de impresión). Artística (acrílicos, oleos, bastidores, atriles, lápices profesionales, marcadores especiales). Imprenta digital: Todo en impresión comercia y social.',
+        location: 'Brasil 541 - Bahia Blanca',
+        phone: '0291 – 4500374',
+        facebook: '@Librería Mega Paper',
+        page: '-',
+        beneficios: [
+          {
+            number: '35% de descuento',
+            text: 'contado efectivo',
+          },
+          {
+            number: '15% de Descuento en 2 o 3 cuotas sin Interés',
+            text: 'por medio de la mutual',
+          }
+        ],
+        field: 'Otros',
+      },
+      {
+        id: '44',
+        imgSrc: require('../assets/optica_urban.png'),
+        title: 'OPTICA URBAN',
+        description: 'OPTICA URBAN instalada desde 2013 se ha caracterizado por brindar atención personalizada y servicio integral a cada paciente, garantizando soluciones visuales y máximo confort. Ofrecemos gran variedad de monturas, modelos exclusivos y una extensa gama tanto en lentes oftálmicos como lentes de contacto. Contamos con equipamiento y personal adecuado para proporcionarte tus anteojos recetados en 24Hs. OPTICA URBAN es sinónimo de rapidez, calidad y respaldo.',
+        location: 'Estomba 228 - Bahia Blanca',
+        phone: '0291 – 4501485',
+        facebook: '-',
+        page: '-',
+        beneficios: [
+          {
+            number: '15 % de Descuento en Armazón,',
+            text: 'contado efectivo',
+          },
+          {
+            number: '25% de Descuento Cristales,',
+            text: 'contado efectivo',
+          },
+          {
+            number: '20% de Descuento en Lentes de Contacto,',
+            text: 'contado efectivo',
+          },
+          {
+            number: '20% de Descuentos en Anteojos de Sol,',
+            text: 'contado efectivo',
+          },
+          {
+            number: '10% de Descuento en 2 o 3 cuotas sin Interés',
+            text: 'por medio de la mutual',
+          }
+        ],
+        field: 'Belleza',
       }
     ],
   },
