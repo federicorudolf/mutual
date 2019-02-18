@@ -920,7 +920,7 @@ const store = new Vuex.Store({
       },
       {
         id: '44',
-        imgSrc: require('../assets/optica_urban.png'),
+        imgSrc: require('../assets/optica-urban-2.jpg'),
         title: 'OPTICA URBAN',
         description: 'OPTICA URBAN instalada desde 2013 se ha caracterizado por brindar atención personalizada y servicio integral a cada paciente, garantizando soluciones visuales y máximo confort. Ofrecemos gran variedad de monturas, modelos exclusivos y una extensa gama tanto en lentes oftálmicos como lentes de contacto. Contamos con equipamiento y personal adecuado para proporcionarte tus anteojos recetados en 24Hs. OPTICA URBAN es sinónimo de rapidez, calidad y respaldo.',
         location: 'Estomba 228 - Bahia Blanca',
@@ -929,7 +929,7 @@ const store = new Vuex.Store({
         page: '-',
         beneficios: [
           {
-            number: '15 % de Descuento en Armazón,',
+            number: '15% de Descuento en Armazón,',
             text: 'contado efectivo',
           },
           {
@@ -947,6 +947,52 @@ const store = new Vuex.Store({
           {
             number: '10% de Descuento en 2 o 3 cuotas sin Interés',
             text: 'por medio de la mutual',
+          }
+        ],
+        field: 'Belleza',
+      },
+      {
+        id: '45',
+        imgSrc: require('../assets/la-banderita.png'),
+        title: 'AUTOSERVICIOS LA BANDERIATA',
+        description: 'En todos nuestros supermercados se puede adquirir todo lo relacionado en mercadería de almacén, limpieza, bebidas, bazar, verdulería, panadería, fiambrería y las mejores carnes.',
+        location: 'IBERTAD 2144 (VILLA ROSAS); BELGRANO 3637 (ING. WHITE); HUMBOLDT 750 (BELLA VISTA); VENEZUELA 1144 (BARRIO CENTENARIO); VIEYTES Y MORENO (CENTRO) Y SOLER 216 (CENTRO). - Bahia Blanca',
+        phone: '0291 – 4520697',
+        facebook: '@labanderitabahia',
+        page: '-',
+        beneficios: [
+          {
+            number: '10% de Descuento',
+            text: 'contado efectivo',
+          },
+          {
+            number: '10% de Descuento en 2 o 3 cuotas sin Interés',
+            text: 'por medio de la mutual',
+          }
+        ],
+        field: 'Gastronomia',
+      },
+      {
+        id: '46',
+        imgSrc: require('../assets/sis-ortopedia.png'),
+        title: 'SIS ORTOPEDIA',
+        description: 'En nuestro Local vas a encontrar toda la Línea de Neoprene, Fajas Ballenadas Lumbosacra, post parto, Medias terapéuticas para damas y caballeros, toda la Línea de Silicona, Nebulizadores, tensiómetro, bastones regulables, trípode.',
+        location: 'San Martin 448 - Bahia Blanca',
+        phone: '0291 – 4514338',
+        facebook: '@Ortopedia Sis',
+        page: '-',
+        beneficios: [
+          {
+            number: '15 % de Descuento en Plantillas Ortopédicas,',
+            text: 'contado efectivo',
+          },
+          {
+            number: '20% de Descuentos en Artículos de Ortopédicos,',
+            text: 'contado efectivo. ',
+          },
+          {
+            number: ' 2 o 3 cuotas,',
+            text: 'Por Medio de la Mutual',
           }
         ],
         field: 'Belleza',
