@@ -996,6 +996,44 @@ const store = new Vuex.Store({
           }
         ],
         field: 'Belleza',
+      },
+      {
+        id: '47',
+        imgSrc: require('../assets/ferreteria_los_romanos.jpg'),
+        title: 'Ferreteria Los Romanos',
+        description: 'En Ferretería Los Romanos encontrás máquinas eléctricas, artículos de bazar, reposeras y sombrillas. Trabajamos la línea INTEX (piletas, colchones y accesorios) y todos los productos para el mantenimiento de piletas.Contamos con una extensa gama de productos STANLEY: herramientas manuales, de jardinería y máquinas eléctricas.Materiales de construcción, eléctricos y pinturas de primera línea, la más amplia variedad de marcas al mejor precio y con el mejor asesoramiento.Hace 10 años que brindamos todos los días, incluyendo sábados, domingos y feriados con estacionamiento libre.',
+        location: 'Vieytes Esq. Entre Rios - Bahia Blanca',
+        phone: '0291 – 4536020',
+        facebook: '@ferreteria Los Romanos',
+        page: 'www.ferreterialosromanos.com.ar',
+        beneficios: [
+          {
+            number: '10 % de Descuento',
+            text: 'contado efectivo',
+          },
+          {
+            number: ' 2 o 3 cuotas,',
+            text: 'Por Medio de la Mutual',
+          }
+        ],
+        field: 'Otros',
+      },
+      {
+        id: '48',
+        imgSrc: require('../assets/lucaioli.jpg'),
+        title: 'CASA HUMBERTO LUCAIOLI UN MUNDO DE OPORTUNIDADES',
+        description: 'Con Mas de 50 Años de trayectoria en el mercado argentino, ha logrado consolidarse con decenas de sucursales que acercan sus productos y servicios a todo el centro y sur del interior del país, cubriendo una amplia zona conformado por Buenos Aires, La Pampa, Neuquén, Río Negro, Chubut, Santa Cruz y Tierra del Fuego. Cuenta con servicio posventa para asegurar la satisfacción del cliente y una logística propia que incluye envió a domicilio en las localidades con sucursal y alrededores. También facilita la adquisición de sus productos mediante sistemas financiación propio y rompe las barreras geográficas a través de la venta online en www.luciaoli.net desde donde ofrece un mayor porfolio al público.',
+        location: 'Patricio 861 - Alma Fuerte 773 - San Martin 136 - Bahia Blanca',
+        phone: '0291 – 4529050',
+        facebook: '',
+        page: 'www.lucaioli.net',
+        beneficios: [
+          {
+            number: '15 % de Descuento',
+            text: 'contado efectivo',
+          }
+        ],
+        field: 'Otros',
       }
     ],
   },
