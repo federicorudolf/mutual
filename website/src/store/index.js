@@ -1034,6 +1034,31 @@ const store = new Vuex.Store({
           }
         ],
         field: 'Otros',
+      },
+      {
+        id: '49',
+        imgSrc: require('../assets/stadium.jpg'),
+        title: 'STADIUM 5',
+        description: 'Acércate a Stadium Cinco Scfc a compartir y disfrutar diferentes actividades recreativas; hockey mayor e infantil, escuelita de fútbol mixto para diferentes edades. Entre ellas también podrás encontrar fútbol femenino. Y te digo más convertimos nuestro espacio físico en esa cancha vóley que tanto buscabas para cuando quieras venir a divertirte con amigo/as. Como varios saben, disponemos de fin de semanas para que chicos y adultos vengan a festejar su cumpleaños; 3 horas de cancha, descartables, invitaciones personalizadas, bebidas comida, snacks etc. Junto a ellos tendrán a elección un profe a cargo encargado de llevar tu cumple a la máxima diversión. Todas las promos incluyen servicio de atención y limpieza. No se queden afuera, los esperamos.',
+        location: 'Vieytes 454 - Bahia Blanca',
+        phone: '0291 – 4527945 / 0291 - 4409557',
+        facebook: '@stadium cinco scfc',
+        page: '',
+        beneficios: [
+          {
+            number: '20 % de Descuento',
+            text: 'contado efectivo en los turnos de futbol 5.',
+          },
+          {
+            number: '20 % de Descuento',
+            text: 'contado efectivo en escuelita de Futbol y de Hockey',
+          },
+          {
+            number: '15 % de Descuento',
+            text: 'contado efectivo en el servicio de cumpleaños (Incluye 3 horas de cancha, bebidas, comidas, snacks, profe a cargo, invitaciones personalizadas y descartables).',
+          }
+        ],
+        field: 'Salones',
       }
     ],
   },
