@@ -12,8 +12,8 @@ const store = new Vuex.Store({
         imgSrc: 'https://i.ytimg.com/vi/8QpV9HV2xqA/maxresdefault.jpg',
         title: 'No end',
         description: 'En No-End te esperamos con toda la Indumentaria formal e informal. Destaca en el día a día, eventos y fiestas.',
-        location: 'GÜEMES 15, Bahía Blanca',
-        phone: '0291 474-0310',
+        location: 'GÜEMES 15 / Brown 83 - Bahía Blanca',
+        phone: '0291 - 450-0091 / 0291 474-0310',
         facebook: '@noendbahiablanca',
         page: 'www.no-end.com.ar',
         beneficios: [
@@ -329,7 +329,7 @@ const store = new Vuex.Store({
         title: 'Motozone',
         description: 'En nuestro local vas a encontrar las mejores marcas del mercado, como la línea de Zanella: Zb 110, Rx 150, Ceccato 150, ZR 150; en la línea Motomel: Blitz 110, S2 150, Skua 150, 200, 250; en la línea Benelli: Tnt 15, 25, 300, 302, y también en la línea Suzuki Ax 100, En 125 y Gixxer 150. Te esperamos.',
         location: 'Corrientes 401 y Villarino 555 - Bahia Blanca',
-        phone: '0291 - 5120302',
+        phone: '0291 - 4516792 / 0291 - 4999005',
         facebook: '@motozonebahia',
         page: 'www.motozone.com.ar',
         beneficios: [
@@ -342,7 +342,7 @@ const store = new Vuex.Store({
             text: 'en 12 cuotas por medio de la mutual.',
           },
           {
-            number: '15% de descuento',
+            number: '25% de descuento',
             text: 'en el service de tu moto, contado efectivo. (Presentando Carnet de la Mutual y Tarjeta Verde a Tu Nombre)',
           },
           {
@@ -826,8 +826,8 @@ const store = new Vuex.Store({
         imgSrc: require('../assets/pintureria-fernandez.jpg'),
         title: 'FERNANDEZ PINTURERIA',
         description: 'Te ofrecemos soluciones al momento de pintar su obra, asesoramiento técnico personalizado, simulador de color con foto real, contamos con toda la línea de productos Tersuave. Disponemos de excelente atención en nuestras 3 sucursales.',
-        location: 'Sarmiento 1330 / Av. Alem 1936 / Soler 493 Esq. Lavalle - Bahia Blanca',
-        phone: '0291 453-5203 / 0291 488-0022 / 0291 451-5397',
+        location: 'Sarmiento 1330 / Av. Alem 1936 / Soler 493 Esq. Lavalle / Don Bosco Esq. Brasil - Bahia Blanca',
+        phone: '0291 453-5203 / 0291 488-0022 / 0291 451-5397 / 0291 - 4500253',
         facebook: '-',
         page: '-',
         beneficios: [
@@ -1019,23 +1019,6 @@ const store = new Vuex.Store({
         field: 'Otros',
       },
       {
-        id: '48',
-        imgSrc: require('../assets/lucaioli.jpg'),
-        title: 'CASA HUMBERTO LUCAIOLI UN MUNDO DE OPORTUNIDADES',
-        description: 'Con Mas de 50 Años de trayectoria en el mercado argentino, ha logrado consolidarse con decenas de sucursales que acercan sus productos y servicios a todo el centro y sur del interior del país, cubriendo una amplia zona conformado por Buenos Aires, La Pampa, Neuquén, Río Negro, Chubut, Santa Cruz y Tierra del Fuego. Cuenta con servicio posventa para asegurar la satisfacción del cliente y una logística propia que incluye envió a domicilio en las localidades con sucursal y alrededores. También facilita la adquisición de sus productos mediante sistemas financiación propio y rompe las barreras geográficas a través de la venta online en www.luciaoli.net desde donde ofrece un mayor porfolio al público.',
-        location: 'Patricio 861 - Alma Fuerte 773 - San Martin 136 - Bahia Blanca',
-        phone: '0291 – 4529050',
-        facebook: '',
-        page: 'www.lucaioli.net',
-        beneficios: [
-          {
-            number: '15 % de Descuento',
-            text: 'contado efectivo',
-          }
-        ],
-        field: 'Otros',
-      },
-      {
         id: '49',
         imgSrc: require('../assets/stadium.jpg'),
         title: 'STADIUM 5',
@@ -1059,6 +1042,35 @@ const store = new Vuex.Store({
           }
         ],
         field: 'Salones',
+      },
+      {
+        id: '50',
+        imgSrc: require('../assets/motomania.jpg'),
+        title: 'MOTOMANIA CONCESIONARIO DE MOTOS',
+        description: 'Motomania Bahía Blanca, es una empresa de venta de motos (Gilera, Zanella, Motomel), también contamos con accesorio de todo tipo como cascos, camperas, guantes, indumentaria en general.Te ofrecemos el mejor asesoramiento, Servicio técnico y repuestos. Te esperamos.',
+        location: 'Brown 371 - Bahia Blanca',
+        phone: '0291 - 5120302 / 0291 - 4148894',
+        facebook: 'Motomania Bahia Blanca',
+        page: '',
+        beneficios: [
+          {
+            number: '8 % de Descuento',
+            text: 'contado efectivo en las gamas de motos.',
+          },
+          {
+            number: '10 % de Descuento',
+            text: 'Service de motos contado efectivo. (Presentando el carnet de la Mutual y Tarjeta verde a tu Nombre)',
+          },
+          {
+            number: '15 % de Descuento',
+            text: 'en Repuestos y Accesorios contado efectivo.',
+          },
+          {
+            number: 'Te financiamos Tu Moto 0 km',
+            text: 'hasta 12 cuotas por medio de la Mutual.',
+          }
+        ],
+        field: 'Otros',
       }
     ],
   },
