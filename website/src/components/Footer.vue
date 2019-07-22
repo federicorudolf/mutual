@@ -11,7 +11,7 @@
             <h4>Contacto</h4>
             <div>
               <p class="title-info"><i class="fas fa-location-arrow"></i>Direccion:</p>
-              <p class="info">Gral Paz 91</p>
+              <p class="info">Gral Paz 321</p>
             </div>
             <div>
               <p class="title-info"><i class="fas fa-mobile-alt"></i>Telefono:</p>

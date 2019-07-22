@@ -252,27 +252,6 @@ const store = new Vuex.Store({
         field: 'Gastronomia',
       },
       {
-        id: '13',
-        imgSrc: require('../assets/quincho-supeh.jpg'),
-        title: 'Quincho Supeh',
-        description: 'Ofrecemos salón para 40 personas. Con vajilla, heladera, freezer. El quincho cuenta con ventiladores y calefacción; muy buena iluminación. Cuenta con baños individuales para damas y caballeros, con el servicio de agua caliente. Dispone de una Parrilla de 1.60mts y una cocina con horno a disposición. Turnos disponibles, medio día y tarde - noche. Te esperamos... tu consulta no molesta.',
-        location: 'Las heras 353 - Bahia Blanca',
-        phone: '0291 - 4438833',
-        facebook: '@Juan Pablo Chirino',
-        page: 'Sin sitio web',
-        beneficios: [
-          {
-            number: '$1.400 DIAS SEMANA',
-            text: 'CONTADO EFECTIVO',
-          },
-          {
-            number: '$1.800 FIN DE SEMANA',
-            text: 'CONTADO EFECTIVO',
-          },
-        ],
-        field: 'Salones',
-      },
-      {
         id: '14',
         imgSrc: require('../assets/tartaglia.jpg'),
         title: 'Tartaglia Christian Ignacio Odontólogo',
@@ -458,35 +437,6 @@ const store = new Vuex.Store({
           {
             number: '3 cuotas sin interes',
             text: 'por medio de la mutual.',
-          },
-        ],
-        field: 'Gastronomia',
-      },
-      {
-        id: '24',
-        imgSrc: require('../assets/epa.png'),
-        title: 'COMIDAS RAPIDAS "EPA" FAST FOOD & DRINKS',
-        description: 'En nuestro local encontraras un servicio de comidas rápidas de calidad, en un ambiente ameno y relajado, brindando una experiencia única para nuestros comensales. Nuestros productos recorren diferentes opciones tradicionalmente conocidas como "comida rápida". Nos diferencia un producto de calidad, la utilización ingredientes seleccionados y el diseño de un menú propio. Nuestro menú se compone del tipo de platos conocidos como "comida rápida". Incluye: sándwich de lomo, sándwich de bondiola, sándwich de milanesa de pollo, sándwich de milanesa de carne vacuna, hamburguesas, panchos y ensaladas. Contamos con un servicio de cafetería y en cuanto a bebidas, se incluye la venta de bebidas sin alcohol (jugos, gaseosas y agua), con la incorporación de la cerveza tirada de la mano de Barbarroja, así como también de sus botellas con diferentes sabores.',
-        location: 'Av Alem esquina San Juan - Bahia Blanca',
-        phone: '291 - 4418457',
-        facebook: '@epabahia',
-        page: 'Sin sitio web',
-        beneficios: [
-          {
-            number: 'Retirando y con tu tarjeta',
-            text: '"Yo soy amigo de EPA"',
-          },
-          {
-            number: '10% de descuento',
-            text: 'contado efectivo.',
-          },
-          {
-            number: 'El dia de tu cumple te invitamos',
-            text: 'tu cena y el brindis para vos y un amigo.',
-          },
-          {
-            number: 'Descuentos exclusivos',
-            text: 'en la app de Epa.',
           },
         ],
         field: 'Gastronomia',
