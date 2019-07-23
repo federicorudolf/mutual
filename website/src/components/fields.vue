@@ -91,7 +91,7 @@
         <h2>Turismo</h2>
         <div class="box-image">
           <div class="image">
-            <img class="img-fluid" src="http://www.asaasholidayplanner.com/images/banner_1.jpg" />
+            <img class="img-fluid" src="https://www.radiocompanyeasy.com/wp-content/uploads/2019/04/turismo-citta-arte-radio-company-easy.jpg" />
           </div>
           <div class="overlay d-flex align-items-center justify-content-center">
             <div class="overlay_content">

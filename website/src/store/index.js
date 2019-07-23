@@ -231,27 +231,6 @@ const store = new Vuex.Store({
         field: 'Salones',
       },
       {
-        id: '12',
-        imgSrc: require('../assets/jotaese.jpg'),
-        title: 'Jotaese Tienda de bebidas',
-        description: 'Tienda de bebidas, los mejores regalos!, cervezas artesanales. Venta por mayor y menor. Tomamos a consignación para todo tipo de evento. Veni que te vamos a brindar una solución.',
-        location: 'Gurruchaga 299 - Esquina San Martin - Gral. Daniel Cerri',
-        phone: '0291 - 6433919',
-        facebook: '@JotaeSe',
-        page: 'Sin sitio web',
-        beneficios: [
-          {
-            number: '5% DE DESCUENTO',
-            text: 'en contado efectivo en cervezas.',
-          },
-          {
-            number: '10% DE DESCUENTO',
-            text: 'en todo el resto.',
-          },
-        ],
-        field: 'Gastronomia',
-      },
-      {
         id: '14',
         imgSrc: require('../assets/tartaglia.jpg'),
         title: 'Tartaglia Christian Ignacio Odontólogo',
