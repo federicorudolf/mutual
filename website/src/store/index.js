@@ -609,7 +609,7 @@ const store = new Vuex.Store({
         imgSrc: require('../assets/optica-ver-mas.jpg'),
         title: 'OPTICA VER+',
         description: 'En Óptica ver más vas a encontrar la mejor calidad al mejor de precio en lentes recetados y de sol, multifocales lentes de contacto y productos para su conservación.. arreglos y más. Con 10 años de trayectoria en nuestro local vas a obtener la mejor atención personalizada y orientación para obtener siempre lo mejor del mercado, lo que está de moda y tendencias del momento. Te esperamos en nuestro local de Villa Mitre.',
-        location: 'Caseros 1555 - Bahia Blanca',
+        location: 'Necochea 277 - Bahia Blanca',
         phone: '0291 - 4822909',
         facebook: '@Óptica ver más villa mitre',
         page: 'Sin sitio web',
@@ -997,6 +997,65 @@ const store = new Vuex.Store({
           {
             number: 'Te financiamos Tu Moto 0 km',
             text: 'hasta 12 cuotas por medio de la Mutual.',
+          }
+        ],
+        field: 'Otros',
+      },
+      {
+        id: '51',
+        imgSrc: require('../assets/TOTO.jpg'),
+        title: 'LAVA AUTOS TOTÓ',
+        description: 'Veni a conocer Lava Autos Totó, donde te ofrecemos, todo lo que tu Auto necesita, Lavado de Carrocería e interior; te brindamos la Limpieza de tus Tapizados, Te Pulimos a Mano y a Máquina, tu auto; También lavamos Motores y chasis.',
+        location: 'Brandsen 249 - Bahia Blanca',
+        phone: '0291 - 5721809 / 291 - 4544232',
+        facebook: '@Totó Lava Autos',
+        page: '',
+        beneficios: [
+          {
+            number: '10% de Descuento',
+            text: 'contado efectivo.',
+          }
+        ],
+        field: 'Otros',
+      },
+      {
+        id: '52',
+        imgSrc: require('../assets/ciudad-magica.jpg'),
+        title: 'CIUDAD MAGICA VILLA MITRE',
+        description: 'En nuestro local vas a encontrar los mejores precio y financiación en muebles, electrodomésticos y juguetes del mercado, te esperamos.',
+        location: 'Necochea 1190 - Bahia Blanca',
+        phone: '0291 - 4271582 / 0291 - 4814612',
+        facebook: '@Ciudad Mágica Villa Mitre',
+        page: '',
+        beneficios: [
+          {
+            number: '2 o 3 cuotas sin interes',
+            text: 'por medio de la mutual.',
+          },
+          {
+            number: 'Te financiamos hasta 12 cuotas,',
+            text: 'todos los productos por medio de La Mutual.',
+          }
+        ],
+        field: 'Otros',
+      },
+      {
+        id: '53',
+        imgSrc: require('../assets/sermat.jpg'),
+        title: 'BATERÍAS SERMAT',
+        description: 'Veni a conocernos a nuestro local, donde te ofrecemos el servicio de un diagnóstico del estado de tu batería y el cambio de la misma. También contamos con el servicio de auxilio dentro del horario comercial y a convenir con el cliente. No dejes de consultar.',
+        location: 'Holdich 43 - Bahia Blanca',
+        phone: '0291 – 54325166',
+        facebook: '@Baterías Sermat',
+        page: '',
+        beneficios: [
+          {
+            number: '5% de descuento',
+            text: 'contado efectivo',
+          },
+          {
+            number: 'Hasta 3 cuotas sin interés',
+            text: 'por Medio De La Mutual.',
           }
         ],
         field: 'Otros',
