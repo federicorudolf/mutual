@@ -5,13 +5,13 @@
       <div class="container">
         <b-row class="footer-r">
           <b-col class="contact-col">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.8397340535043!2d-62.26155868465489!3d-38.721488379598156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95eda34b9bf4e737%3A0x2b93721809ad4771!2sGral.+Paz+91%2C+8000+Bah%C3%ADa+Blanca%2C+Buenos+Aires!5e0!3m2!1sen!2sar!4v1532013287511" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.9325657844875!2d-62.25886798465481!3d-38.719357179598546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95eda34ea6ea1601%3A0x62829e16013f4bad!2sGral.+Paz+319%2C+B8000IPG+Bah%C3%ADa+Blanca%2C+Buenos+Aires!5e0!3m2!1ses!2sar!4v1566145555448!5m2!1ses!2sar" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
           </b-col>
           <b-col class="contact-col">
             <h4>Contacto</h4>
             <div>
               <p class="title-info"><i class="fas fa-location-arrow"></i>Direccion:</p>
-              <p class="info">Gral Paz 321</p>
+              <p class="info">Gral Paz 319</p>
             </div>
             <div>
               <p class="title-info"><i class="fas fa-mobile-alt"></i>Telefono:</p>

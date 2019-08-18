@@ -457,15 +457,15 @@ const store = new Vuex.Store({
         beneficios: [
           {
             number: 'Plan Platino: Actividades a eleccion',
-            text: 'Musculacion de 7 a 22:30; natacion 2 veces por semana con profesor o pileta libre; Fitness Grupal; Gimnasia Acuática; Entrenamiento funcional; Karate; Cycle; Pilates; Cardio Mas; Fit Box y Guarderia. COSTO: $1.732',
+            text: 'Musculacion de 7 a 22:30; natacion 2 veces por semana con profesor o pileta libre; Fitness Grupal; Gimnasia Acuática; Entrenamiento funcional; Karate; Cycle; Pilates; Cardio Mas; Fit Box y Guarderia.',
           },
           {
             number: 'Plan oro: Actividades a eleccion',
-            text: 'Musculación todos los días; Fitness Grupal; Entrenamiento funcional ; Karate; Cycle; Pilates; Cardio Mas Y Fit Box. COSTO: $1.270',
+            text: 'Musculación todos los días; Fitness Grupal; Entrenamiento funcional ; Karate; Cycle; Pilates; Cardio Mas Y Fit Box.',
           },
           {
             number: 'Cambio estilo de vida',
-            text: 'Este plan contempla un tratamiento multidisciplinario para revertir los factores de riesgo cardiovasculares, principalmente sobre peso, hipertensión, colesterol, diabetes, y el sedentarismo. Contempla chequeos médicos, planificación y seguimiento del entrenamiento. COSTO: $1.935',
+            text: 'Este plan contempla un tratamiento multidisciplinario para revertir los factores de riesgo cardiovasculares, principalmente sobre peso, hipertensión, colesterol, diabetes, y el sedentarismo. Contempla chequeos médicos, planificación y seguimiento del entrenamiento.',
           },
           {
             number: 'Plan familiar',
@@ -477,7 +477,7 @@ const store = new Vuex.Store({
           },
           {
             number: 'Natacion',
-            text: '2 Veces por semana con profesor o pileta libre. COSTO: $1.540',
+            text: '2 Veces por semana con profesor o pileta libre.',
           },
           {
             number: 'Convenio de 6 meses',
@@ -1056,6 +1056,23 @@ const store = new Vuex.Store({
           {
             number: 'Hasta 3 cuotas sin interés',
             text: 'por Medio De La Mutual.',
+          }
+        ],
+        field: 'Otros',
+      },
+      {
+        id: '54',
+        imgSrc: require('../assets/af-fotografias.jpg'),
+        title: 'AF FOTOGRAFIAS',
+        description: 'Eventos sociales, Casamientos, Cumpleaños de quince, Sesiones grupales e individuales, Bautismos, Sesiones de maternidad, Producciones de moda, Preboda Y Producciones para tu marca.',
+        location: 'Hilario Ascasubi 155 - Bahia Blanca',
+        phone: '291 - 154725837',
+        facebook: '@fabrizio Aispuro',
+        page: '',
+        beneficios: [
+          {
+            number: '10% de descuento',
+            text: 'contado efectivo',
           }
         ],
         field: 'Otros',
