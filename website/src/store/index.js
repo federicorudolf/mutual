@@ -209,24 +209,20 @@ const store = new Vuex.Store({
         id: '11',
         imgSrc: require('../assets/pinotea-fiestas.jpg'),
         title: 'Casita de fiestas Pinotea',
-        description: 'Cuenta con una excelente animación para niños de 2 animadores hasta 30 chicos, la capacidad total es de 35 adultos y 35 niños. Servicio de cocina y en las mesas para que puedan disfrutar del evento. Piñata, sorpresa, animaciones y en cuanto a entretenimiento te ofrecemos pelotero, inflable, plaza blanda, metegol, música y luces, disfraces, títeres, pintura, cancha de futbol con césped sintético, cama elástica y juegos de plaza. Te esperamos...',
+        description: 'El servicio incluye 3 horas de alquiler con la mejor animación (siempre acorde a la edad de los chicos), 4 personas por cumple, 2 animadoras para 30 chicos (en caso de superar esa cantidad se deberá abonar un animador extra $650), 1 ayudante de cocina y 1 camarera, también incluye piñata, bolsita de souvenirs, invitaciones, y servicio de café, té y mate libre. Nuestra casita cuenta con inflable, pelotero, plaza blanda, pista de baile, juegos de plaza, cancha de fútbol, cama elástica, metegol, casita de madera, y mucho más. También contamos con internet WIFI, servicio de emergencias médicas y ambiente climatizado. El servicio detallado es para 30 chicos y 35 adultos, consultar por más personas. Hay más capacidad.',
         location: 'Holdich 758 - Bahía Blanca',
-        phone: '0291 - 4517619 / 0291 - 15614766 / 0291 - 15464785',
+        phone: '291 - 155037427',
         facebook: '@Pinoteacasitadefiestas',
         page: 'Sin sitio web',
         beneficios: [
           {
-            number: '10% DE DESCUENTO',
+            number: '20% DE DESCUENTO',
             text: 'en contado efectivo',
           },
           {
-            number: '3 CUOTAS SIN INTERES',
-            text: 'POR MEDIO DE LA MUTUAL',
-          },
-          {
-            number: 'CADA 5 FIESTITAS CONTRATADA POR LOS AFILIADOS DE LA',
-            text: 'MUTUAL HABRA 1 FIESTITA DE REGALO PARA SORTEAR.',
-          },
+            number: '15% en 2 cuotas sin interes',
+            text: 'por medio de la mutual.',
+          }
         ],
         field: 'Salones',
       },
@@ -1051,7 +1047,7 @@ const store = new Vuex.Store({
         beneficios: [
           {
             number: '5% de descuento',
-            text: 'contado efectivo',
+            text: 'contado efectivo.',
           },
           {
             number: 'Hasta 3 cuotas sin interés',
@@ -1072,7 +1068,91 @@ const store = new Vuex.Store({
         beneficios: [
           {
             number: '10% de descuento',
-            text: 'contado efectivo',
+            text: 'contado efectivo.',
+          }
+        ],
+        field: 'Otros',
+      },
+      {
+        id: '55',
+        imgSrc: require('../assets/churros-villa-rosas.jpg'),
+        title: 'Churreria Villa Rosas',
+        description: 'En nuestro local vas a encontrar los más rico churros rellenos de la ciudad, también te ofrecemos, tortas fritas, berlinesas rellenas, rocas, cubanitos bañados y comunes, chipá, alfajores de maicena y de chocolates, torta matera, tarta de coco, mini tarta, pasta flora, polvorones y el mejor pan de la zona.',
+        location: 'Calle 1810 N.º 1872 - Bahia Blanca',
+        phone: '0291 – 1554325166',
+        facebook: '@Churreria Villa Rosas',
+        page: '',
+        beneficios: [
+          {
+            number: '20% de descuento',
+            text: 'contado efectivo, en churros.',
+          },
+          {
+            number: '5% de descuento',
+            text: 'contado efectivo, en las demas variedades.',
+          }
+        ],
+        field: 'Gastronomia',
+      },
+      {
+        id: '56',
+        imgSrc: require('../assets/optica-tedesco.jpg'),
+        title: 'Optica Tedesco',
+        description: 'En Óptica Tedesco somos especialistas en lente multifocales con la mejor tecnología, tenemos los mejores diseños originales en lente recetado y de sol; te brindamos la mejor atención personalizada con los mejores profesionales. Tenemos fabricación propia, en monofocales y multifocales. Te esperamos, tu consulta no nos molesta.',
+        location: 'Av. Alem 702 Esq. Casanova - Bahia Blanca',
+        phone: '291 – 451423 / 291 – 4231128',
+        facebook: '@tedescoalem',
+        page: '',
+        beneficios: [
+          {
+            number: '25% de descuento',
+            text: 'contado efectivo.',
+          },
+          {
+            number: '5% de descuento',
+            text: 'en cuotas por medio de la mutual.',
+          }
+        ],
+        field: 'Belleza',
+      },
+      {
+        id: '57',
+        imgSrc: require('../assets/tres-deseos.jpg'),
+        title: 'CASITA DE FIETAS INFANTILES Y EVENTOS TRES DESEOS',
+        description: 'En Nuestra Casa De Fiestas, Tres Deseos vas a Poder disfrutar de Cumpleaños, Asados, Reuniones, despedidas y mucho más, ya que contamos con una capacidad para 50 personas, donde contamos con parrilla, horno pizzero y una cocina completa a tu disposición. Para los más chicos contamos con Pelotero, tobogán, casita, calesita, juegos de videos, maquillaje, metegol, inflable, pista de baile, animación y mucho mas juegos.',
+        location: 'Manuel Molina 964 - Bahia Blanca',
+        phone: '291 – 154293244',
+        facebook: '@casita de fiestas infantiles y eventos tres deseos',
+        page: '',
+        beneficios: [
+          {
+            number: '15% de descuento',
+            text: 'contado efectivo.',
+          },
+          {
+            number: '2 o 3 cuotas sin interes',
+            text: 'por medio de la mutual.',
+          }
+        ],
+        field: 'Salones',
+      },
+      {
+        id: '58',
+        imgSrc: require('../assets/colchones-castor.jpg'),
+        title: 'COLCHONES CASTOR S. A.',
+        description: 'En Castor s.a. comercializamos colchones y sommier de 1era calidad garantizada, la entrega es sin cargo en Bahía Blanca. También en nuestra tienda en Maldonado 21 ofrecemos sábanas, almohadas, cubrecolchones, frazadas, acolchados, toallas, cortinas, además disponemos de productos de lavandería como jabón líquido para lavarropas automático y suavizantes por 20 litros a precio mayoristas.',
+        location: 'Maldonado 21 - Bahia Blanca',
+        phone: '291 - 5118805',
+        facebook: '@castorsabahia',
+        page: 'www.castorsa.com.ar',
+        beneficios: [
+          {
+            number: '20% de descuento',
+            text: 'contado efectivo en colchones y sommier.',
+          },
+          {
+            number: '2 o 3 cuotas sin interes',
+            text: 'por medio de la mutual.',
           }
         ],
         field: 'Otros',
