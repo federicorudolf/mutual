@@ -207,7 +207,7 @@ const store = new Vuex.Store({
       },
       {
         id: '11',
-        imgSrc: require('../assets/pinotea-fiestas.jpg'),
+        imgSrc: require('../assets/pinotea.jpg'),
         title: 'Casita de fiestas Pinotea',
         description: 'El servicio incluye 3 horas de alquiler con la mejor animación (siempre acorde a la edad de los chicos), 4 personas por cumple, 2 animadoras para 30 chicos (en caso de superar esa cantidad se deberá abonar un animador extra $650), 1 ayudante de cocina y 1 camarera, también incluye piñata, bolsita de souvenirs, invitaciones, y servicio de café, té y mate libre. Nuestra casita cuenta con inflable, pelotero, plaza blanda, pista de baile, juegos de plaza, cancha de fútbol, cama elástica, metegol, casita de madera, y mucho más. También contamos con internet WIFI, servicio de emergencias médicas y ambiente climatizado. El servicio detallado es para 30 chicos y 35 adultos, consultar por más personas. Hay más capacidad.',
         location: 'Holdich 758 - Bahía Blanca',
@@ -296,7 +296,7 @@ const store = new Vuex.Store({
             text: 'en 12 cuotas por medio de la mutual.',
           },
           {
-            number: '25% de descuento',
+            number: '20% de descuento',
             text: 'en el service de tu moto, contado efectivo. (Presentando Carnet de la Mutual y Tarjeta Verde a Tu Nombre)',
           },
           {
@@ -541,7 +541,7 @@ const store = new Vuex.Store({
         id: '30',
         imgSrc: require('../assets/bhi-viajes.png'),
         title: 'BHI VIAJES Y TURISMO',
-        description: '',
+        description: 'En BHI Viajes es una empresa bahiense con 12 años d trayectoria. Destinos regionales, nacionales e internacionales. Aéreos. Cruceros. Egresados. Destinos como Pigüe (Fiesta de la Omelette), Mar del Plata, Colonia San Martin (Lechón al Asador), Dufour, Camboriu, Cataratas. Termas Médanos y Carhue, Puan, San Rafael. Consulte descuentos asociados.',
         location: 'Caronti 127 - Bahia Blanca',
         phone: '0291 - 4566670',
         facebook: '@bhiviajesbahia',
@@ -550,6 +550,10 @@ const store = new Vuex.Store({
           {
             number: '10% de descuento',
             text: 'contado efectivo',
+          },
+          {
+            number: '2 o 3 cuotas',
+            text: 'por medio de la mutual.',
           },
         ],
         field: 'Turismo',
@@ -881,7 +885,7 @@ const store = new Vuex.Store({
         imgSrc: require('../assets/la-banderita.png'),
         title: 'AUTOSERVICIOS LA BANDERIATA',
         description: 'En todos nuestros supermercados se puede adquirir todo lo relacionado en mercadería de almacén, limpieza, bebidas, bazar, verdulería, panadería, fiambrería y las mejores carnes.',
-        location: 'IBERTAD 2144 (VILLA ROSAS); BELGRANO 3637 (ING. WHITE); HUMBOLDT 750 (BELLA VISTA); VENEZUELA 1144 (BARRIO CENTENARIO); VIEYTES Y MORENO (CENTRO) Y SOLER 216 (CENTRO). - Bahia Blanca',
+        location: 'IBERTAD 2144 (VILLA ROSAS); BELGRANO 3637 (ING. WHITE); HUMBOLDT 750 (BELLA VISTA); VENEZUELA 1144 (BARRIO CENTENARIO); VIEYTES Y MORENO (CENTRO) Y SOLER 216 (CENTRO); 14 de julio 3019 (Barrio Nacional) - Bahia Blanca',
         phone: '0291 – 4520697',
         facebook: '@labanderitabahia',
         page: '-',
@@ -1025,6 +1029,10 @@ const store = new Vuex.Store({
         page: '',
         beneficios: [
           {
+            number: '10% de Descuento',
+            text: 'contado efectivo.',
+          },
+          {
             number: '2 o 3 cuotas sin interes',
             text: 'por medio de la mutual.',
           },
@@ -1152,6 +1160,77 @@ const store = new Vuex.Store({
           },
           {
             number: '2 o 3 cuotas sin interes',
+            text: 'por medio de la mutual.',
+          }
+        ],
+        field: 'Otros',
+      },
+      {
+        id: '59',
+        imgSrc: require('../assets/contenedores-el-cabeza.jpg'),
+        title: 'Contenedores El Cabeza',
+        description: 'Servicio de contenedores y volquetes para la construcción y el particular, el mejor servicio al menor precio. También ofrecemos el servicio de Áridos, arena fina y media, escombro, canto Rodado, tierra negra o para relleno y mucho más….. Comunícate. Atendemos las 24 horas. Ahora También sumamos servicio de Desagotes Cloacales.',
+        location: 'Av. 14 de Julio 3915 - Bahia Blanca',
+        phone: '291 - 154378671',
+        facebook: '@elcabeza',
+        page: '',
+        beneficios: [
+          {
+            number: '10% de descuento',
+            text: 'contado efectivo.',
+          }
+        ],
+        field: 'Otros',
+      },
+      {
+        id: '60',
+        imgSrc: require('../assets/picadas-bahia.jpg'),
+        title: 'Picadas Bahia Picadas por metros',
+        description: 'Te contamos que además de nuestras tablas convencionales para tus eventos podes pedir nuestros nuevos productos, como Conos personalizados y el fiambre de calidad que ya conoces! Te armamos las mesas más atractivas con panes especiales para sorprender a tus invitados, pero vamos por más, ahora podes contratar nuestra Pulpería con servicio parcial o completo. Arma tu cierre de año en la empresa, tu evento en casa, tu casamiento con la propuesta que todos disfrutamos.',
+        location: 'Panama 799 ESQ.  Santiago Del Estero - Bahia Blanca',
+        phone: '291 - 155098722',
+        facebook: '@Picadas Bahía',
+        page: '',
+        beneficios: [
+          {
+            number: '20% de descuento',
+            text: 'contado efectivo.',
+          },
+          {
+            number: 'Hasta 2 cuotas sin Interés',
+            text: 'por medio de la mutual.',
+          },
+          {
+            number: 'Todos los pedidos son por encargué Y Pidiendo la picada para 6 Personas….',
+            text: 'Te llevas los Panes Artesanales gratis.',
+          }
+        ],
+        field: 'Gastronomia',
+      },
+      {
+        id: '61',
+        imgSrc: require('../assets/modde-movicell.jpg'),
+        title: 'Movicell',
+        description: 'En Movilcell te ofrecemos todas las líneas de celulares nuevos y también tenemos usados, realizamos service a todas las gamas de celulares y Tablet, tenemos un amplio margen de Accesorios. Incorporamos Electrométricos y te brindamos también Artículos de computación.',
+        location: 'Corrientes 463 - Bahia Blanca',
+        phone: '291 - 4563555 / 291 - 5160098',
+        facebook: '@moddetecno',
+        page: '',
+        beneficios: [
+          {
+            number: '15% de descuento',
+            text: 'contado efectivo en servicio tecnico.',
+          },
+          {
+            number: '10% de descuento',
+            text: 'contado efectivo en todas las gamas de accesorios.',
+          },
+          {
+            number: '5% de descuento',
+            text: 'contado efectivo en equipos y tecnologia.',
+          },
+          {
+            number: 'Hasta 2 cuotas sin Interés',
             text: 'por medio de la mutual.',
           }
         ],
