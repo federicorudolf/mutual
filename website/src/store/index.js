@@ -22,7 +22,7 @@ const store = new Vuex.Store({
             text: 'con la compra contado efectivo.',
           },
           {
-            number: '3 Cuotas sin interes',
+            number: 'Hasta 12 cuotas',
             text: 'por medio de la mutual.',
           },
         ],
@@ -102,7 +102,7 @@ const store = new Vuex.Store({
             text: 'en contado y efectivo.',
           },
           {
-            number: '3 cuotas sin interes',
+            number: 'Hasta 12 cuotas',
             text: 'por medio de la mutual.',
           },
         ],
@@ -127,8 +127,8 @@ const store = new Vuex.Store({
             text: 'en equipos y tecnologia.',
           },
           {
-            number: 'Con una orden de compra',
-            text: 'hasta 3 cuotas sin interes',
+            number: 'Hasta 12 cuotas',
+            text: 'por medio de la mutual.',
           },
         ],
         field: 'Otros',
@@ -217,10 +217,10 @@ const store = new Vuex.Store({
         beneficios: [
           {
             number: '20% DE DESCUENTO',
-            text: 'en contado efectivo',
+            text: 'contado efectivo',
           },
           {
-            number: '15% en 2 cuotas sin interes',
+            number: 'Hasta 12 cuotas',
             text: 'por medio de la mutual.',
           }
         ],
@@ -237,8 +237,8 @@ const store = new Vuex.Store({
         page: 'Sin sitio web',
         beneficios: [
           {
-            number: 'Financiacion',
-            text: 'hasta 12 cuotas.',
+            number: 'Hasta 12 cuotas',
+            text: 'por medio de la mutual.',
           },
         ],
         field: 'Belleza',
@@ -303,40 +303,6 @@ const store = new Vuex.Store({
             number: '10% en repuestos',
             text: 'y accesorios, contado efectivo',
           }
-        ],
-        field: 'Otros',
-      },
-      {
-        id: '18',
-        imgSrc: require('../assets/dunatos-panaderia.jpg'),
-        title: 'PANADERIA Y CONFITERIA "DUNATOS"',
-        description: 'En nuestro local vas a encontras las mejores facturas de manteca, polvorones, masas secas y finas, Grisines, panes especiales y ayuyas, pan saborizado, elaboramos tortas de cumpleaños y casamientos, somos fabricantes de sándwich de migas y pizza lista, te esperamos.',
-        location: 'Diagonal Spurr 2861 - Bahia Blanca',
-        phone: '0291 - 405458',
-        facebook: '-',
-        page: '-',
-        beneficios: [
-          {
-            number: '10% de descuento',
-            text: 'contado efectivo.',
-          },
-        ],
-        field: 'Gastronomia',
-      },
-      {
-        id: '19',
-        imgSrc: require('../assets/el-cabeza.jpg'),
-        title: 'CONTENEDORES "EL CABEZA"',
-        description: 'Servicio de contenedores y volquetes, para la construcción y el particular; el mejor servicio al menor precio. También te ofrecemos el servicio de Áridos, arenafina y mediana, escombro, canto rodado, tierra negra o para relleno y mucho más... comunícate. Atendemos las 24 horas.',
-        location: 'Bahia Blanca',
-        phone: '0291 - 4378671',
-        facebook: '@contenedoreselcabeza',
-        page: '-',
-        beneficios: [
-          {
-            number: '10% de descuento',
-            text: 'contado efectivo.',
-          },
         ],
         field: 'Otros',
       },
@@ -410,7 +376,7 @@ const store = new Vuex.Store({
             text: 'para fiestas y cumpleaños.',
           },
           {
-            number: '3 cuotas sin interes',
+            number: 'Hasta 12 cuotas',
             text: 'por medio de la mutual.',
           },
         ],
@@ -531,8 +497,8 @@ const store = new Vuex.Store({
             text: 'En las marcas Lubeck - Moura - Press y Yuasa.',
           },
           {
-            number: 'Con una orden de compra por medio de la mutual',
-            text: 'hasta 3 cuotas sin interes.',
+            number: 'Hasta 12 cuotas',
+            text: 'por medio de la mutual.',
           },
         ],
         field: 'Otros',
@@ -543,7 +509,7 @@ const store = new Vuex.Store({
         title: 'BHI VIAJES Y TURISMO',
         description: 'En BHI Viajes es una empresa bahiense con 12 años d trayectoria. Destinos regionales, nacionales e internacionales. Aéreos. Cruceros. Egresados. Destinos como Pigüe (Fiesta de la Omelette), Mar del Plata, Colonia San Martin (Lechón al Asador), Dufour, Camboriu, Cataratas. Termas Médanos y Carhue, Puan, San Rafael. Consulte descuentos asociados.',
         location: 'Caronti 127 - Bahia Blanca',
-        phone: '0291 - 4566670',
+        phone: '0291 - 4566070',
         facebook: '@bhiviajesbahia',
         page: 'www.bviajes.tur.ar',
         beneficios: [
@@ -552,7 +518,7 @@ const store = new Vuex.Store({
             text: 'contado efectivo',
           },
           {
-            number: '2 o 3 cuotas',
+            number: 'Hasta 12 cuotas',
             text: 'por medio de la mutual.',
           },
         ],
@@ -623,7 +589,7 @@ const store = new Vuex.Store({
             text: '(Anteojos de Sol.)',
           },
           {
-            number: '3 cuotas sin interes',
+            number: 'Hasta 12 cuotas',
             text: 'por medio de la mutual.',
           },
         ],
@@ -644,7 +610,7 @@ const store = new Vuex.Store({
             text: 'contado efectivo.',
           },
           {
-            number: '3 cuotas sin interes',
+            number: 'Hasta 12 cuotas',
             text: 'por medio de la mutual.',
           },
         ],
@@ -665,7 +631,7 @@ const store = new Vuex.Store({
             text: 'contado efectivo.',
           },
           {
-            number: '2 o 3 cuotas sin interes',
+            number: 'Hasta 12 cuotas',
             text: 'por medio de la mutual.',
           },
         ],
@@ -703,7 +669,7 @@ const store = new Vuex.Store({
             text: 'contado efectivo (VENTA POR MAYOR, COMPRA MINIMA 5KG)',
           },
           {
-            number: '2 o 3 cuotas sin interes',
+            number: 'Hasta 12 cuotas',
             text: 'por medio de la mutual.',
           },
         ],
@@ -761,7 +727,7 @@ const store = new Vuex.Store({
         page: '-',
         beneficios: [
           {
-            number: '3 de cuotas sin interes',
+            number: 'Hasta 12 cuotas',
             text: 'por medio de la mutual.',
           },
           {
@@ -820,7 +786,7 @@ const store = new Vuex.Store({
             text: 'contado efectivo',
           },
           {
-            number: 'Hasta 2 o 3 cuotas sin Interés',
+            number: 'Hasta 12 cuotas',
             text: 'por medio de la mutual',
           }
         ],
@@ -837,11 +803,11 @@ const store = new Vuex.Store({
         page: '-',
         beneficios: [
           {
-            number: '35% de descuento',
+            number: '28% de descuento',
             text: 'contado efectivo',
           },
           {
-            number: '15% de Descuento en 2 o 3 cuotas sin Interés',
+            number: '10% de descuento',
             text: 'por medio de la mutual',
           }
         ],
@@ -874,7 +840,7 @@ const store = new Vuex.Store({
             text: 'contado efectivo',
           },
           {
-            number: '10% de Descuento en 2 o 3 cuotas sin Interés',
+            number: 'Hasta 12 cuotas',
             text: 'por medio de la mutual',
           }
         ],
@@ -885,7 +851,7 @@ const store = new Vuex.Store({
         imgSrc: require('../assets/la-banderita.png'),
         title: 'AUTOSERVICIOS LA BANDERIATA',
         description: 'En todos nuestros supermercados se puede adquirir todo lo relacionado en mercadería de almacén, limpieza, bebidas, bazar, verdulería, panadería, fiambrería y las mejores carnes.',
-        location: 'IBERTAD 2144 (VILLA ROSAS); BELGRANO 3637 (ING. WHITE); HUMBOLDT 750 (BELLA VISTA); VENEZUELA 1144 (BARRIO CENTENARIO); VIEYTES Y MORENO (CENTRO) Y SOLER 216 (CENTRO); 14 de julio 3019 (Barrio Nacional) - Bahia Blanca',
+        location: 'LIBERTAD 2144 (VILLA ROSAS); BELGRANO 3637 (ING. WHITE); HUMBOLDT 750 (BELLA VISTA); VENEZUELA 1144 (BARRIO CENTENARIO); VIEYTES Y MORENO (CENTRO) Y SOLER 216 (CENTRO); 14 de julio 3019 (Barrio Nacional) - Bahia Blanca',
         phone: '0291 – 4520697',
         facebook: '@labanderitabahia',
         page: '-',
@@ -895,7 +861,7 @@ const store = new Vuex.Store({
             text: 'contado efectivo',
           },
           {
-            number: '10% de Descuento en 2 o 3 cuotas sin Interés',
+            number: 'Hasta 12 cuotas',
             text: 'por medio de la mutual',
           }
         ],
@@ -920,8 +886,8 @@ const store = new Vuex.Store({
             text: 'contado efectivo. ',
           },
           {
-            number: ' 2 o 3 cuotas,',
-            text: 'Por Medio de la Mutual',
+            number: 'Hasta 12 cuotas',
+            text: 'por medio de la mutual.',
           }
         ],
         field: 'Belleza',
@@ -941,8 +907,8 @@ const store = new Vuex.Store({
             text: 'contado efectivo',
           },
           {
-            number: ' 2 o 3 cuotas,',
-            text: 'Por Medio de la Mutual',
+            number: 'Hasta 12 cuotas',
+            text: 'por medio de la mutual.',
           }
         ],
         field: 'Otros',
@@ -1058,8 +1024,8 @@ const store = new Vuex.Store({
             text: 'contado efectivo.',
           },
           {
-            number: 'Hasta 3 cuotas sin interés',
-            text: 'por Medio De La Mutual.',
+            number: 'Hasta 12 cuotas',
+            text: 'por medio de la mutual.',
           }
         ],
         field: 'Otros',
@@ -1126,10 +1092,10 @@ const store = new Vuex.Store({
       {
         id: '57',
         imgSrc: require('../assets/tres-deseos.jpg'),
-        title: 'CASITA DE FIETAS INFANTILES Y EVENTOS TRES DESEOS',
+        title: 'CASITA DE FIESTAS INFANTILES Y EVENTOS TRES DESEOS',
         description: 'En Nuestra Casa De Fiestas, Tres Deseos vas a Poder disfrutar de Cumpleaños, Asados, Reuniones, despedidas y mucho más, ya que contamos con una capacidad para 50 personas, donde contamos con parrilla, horno pizzero y una cocina completa a tu disposición. Para los más chicos contamos con Pelotero, tobogán, casita, calesita, juegos de videos, maquillaje, metegol, inflable, pista de baile, animación y mucho mas juegos.',
         location: 'Manuel Molina 964 - Bahia Blanca',
-        phone: '291 – 154293244',
+        phone: '0291 – 4293244',
         facebook: '@casita de fiestas infantiles y eventos tres deseos',
         page: '',
         beneficios: [
@@ -1138,7 +1104,7 @@ const store = new Vuex.Store({
             text: 'contado efectivo.',
           },
           {
-            number: '2 o 3 cuotas sin interes',
+            number: 'Hasta 12 cuotas',
             text: 'por medio de la mutual.',
           }
         ],
@@ -1159,7 +1125,7 @@ const store = new Vuex.Store({
             text: 'contado efectivo en colchones y sommier.',
           },
           {
-            number: '2 o 3 cuotas sin interes',
+            number: 'Hasta 12 cuotas',
             text: 'por medio de la mutual.',
           }
         ],
@@ -1181,31 +1147,6 @@ const store = new Vuex.Store({
           }
         ],
         field: 'Otros',
-      },
-      {
-        id: '60',
-        imgSrc: require('../assets/picadas-bahia.jpg'),
-        title: 'Picadas Bahia Picadas por metros',
-        description: 'Te contamos que además de nuestras tablas convencionales para tus eventos podes pedir nuestros nuevos productos, como Conos personalizados y el fiambre de calidad que ya conoces! Te armamos las mesas más atractivas con panes especiales para sorprender a tus invitados, pero vamos por más, ahora podes contratar nuestra Pulpería con servicio parcial o completo. Arma tu cierre de año en la empresa, tu evento en casa, tu casamiento con la propuesta que todos disfrutamos.',
-        location: 'Panama 799 ESQ.  Santiago Del Estero - Bahia Blanca',
-        phone: '291 - 155098722',
-        facebook: '@Picadas Bahía',
-        page: '',
-        beneficios: [
-          {
-            number: '20% de descuento',
-            text: 'contado efectivo.',
-          },
-          {
-            number: 'Hasta 2 cuotas sin Interés',
-            text: 'por medio de la mutual.',
-          },
-          {
-            number: 'Todos los pedidos son por encargué Y Pidiendo la picada para 6 Personas….',
-            text: 'Te llevas los Panes Artesanales gratis.',
-          }
-        ],
-        field: 'Gastronomia',
       },
       {
         id: '61',
@@ -1230,11 +1171,140 @@ const store = new Vuex.Store({
             text: 'contado efectivo en equipos y tecnologia.',
           },
           {
-            number: 'Hasta 2 cuotas sin Interés',
+            number: 'Hasta 12 cuotas',
             text: 'por medio de la mutual.',
           }
         ],
         field: 'Otros',
+      },
+      {
+        id: '62',
+        imgSrc: require('../assets/reims.jpg'),
+        title: 'Reims Joyeros - Relojeros',
+        description: 'En nuestro locales vas a encontrar todo lo relacionado en Joyería y relojería: Relojería multimarca: Citizen, Casio, Festina, Cat, Tommy, Puma entre muchas más! Fabricantes de joyería: Lo mejores precios en alianza y una amplia variedad de modelos. También incorporamos diferente modelos de cuchillos y cortaplumas de la línea Victorinox. Contamos con productos de regalaría, como cajas musicales, billeteras damas y caballeros. Te esperamos, no dudes en contactarnos.',
+        location: 'Brown 218 – Donado 33 – B. Irigoyen 360 (Punta Alta)',
+        phone: '0291 – 4545927  -  0291 – 4532044  -  02932 - 422555',
+        facebook: '@reimsjoyeria',
+        page: '',
+        beneficios: [
+          {
+            number: '25% de descuento contado efectivo',
+            text: 'en Plata.',
+          },
+          {
+            number: '25% de descuento contado efectivo',
+            text: 'en Regaleria.',
+          },
+          {
+            number: '20% de descuento contado efectivo',
+            text: 'en Oro.',
+          },
+          {
+            number: '15% de descuento contado efectivo',
+            text: 'en Alianzas de Oro.',
+          },
+          {
+            number: '20% de descuento contado efectivo',
+            text: 'en Alianzas de Plata.',
+          },
+          {
+            number: '15% de descuento contado efectivo',
+            text: 'en Abridores.',
+          },
+          {
+            number: 'Te financiamos hasta 12 cuotas',
+            text: 'por medio de la Mutual.',
+          }
+        ],
+        field: 'Otros',
+      },
+      {
+        id: '63',
+        imgSrc: require('../assets/armeria-tauro.png'),
+        title: 'Armeria Tauro',
+        description: 'Somos una empresa con más de 30 años de experiencia, destacándonos en los rubros de la Caza y Pesca, también te ofrecemos todo lo relacionado en camping e indumentaria Outdoor, no dudes en contactarnos.',
+        location: 'San Martín 605 Esq. Brandsen - Bahia Blanca',
+        phone: '0291 - 4531198 / 0291 - 4551394',
+        facebook: '@armeriatauro',
+        page: '',
+        beneficios: [
+          {
+            number: '15% de descuento',
+            text: 'contado efectivo en Matriculación.',
+          },
+          {
+            number: 'Te financiamos hasta 12 cuotas',
+            text: 'por medio de la Mutual.',
+          }
+        ],
+        field: 'Otros',
+      },
+      {
+        id: '64',
+        imgSrc: require('../assets/jardin-el-osito-sinforoso.png'),
+        title: 'Jardin de infantes y maternal, El osito sinforoso',
+        description: 'En el Jardín de Infantes y Maternal El Osito Sinforoso tenemos disponibilidad de los Turno Mañana y Tarde a partir de 1 a 5 años, brindando una educación temprana, inclusiva e integral en las diferentes áreas del saber a cargo de docentes profesionales. Inglés, Música, Expresión Corporal, Ed. Física. Si queres saber más de nosotros no dudes en contactarnos..',
+        location: 'Neuquén 1147 - Bahia Blanca',
+        phone: '0291 - 4512056',
+        facebook: '@jardín de infantes el osito sinforoso',
+        page: '',
+        beneficios: [
+          {
+            number: '10% de descuento',
+            text: 'contado efectivo en Matriculación.',
+          },
+          {
+            number: '10% de descuento',
+            text: 'contado efectivo en Jardin de Infantes.',
+          },
+          {
+            number: '10% de descuento',
+            text: 'contado efectivo en Jardin Maternal.',
+          }
+        ],
+        field: 'Otros',
+      },
+      {
+        id: '65',
+        imgSrc: require('../assets/stop-fire.jpg'),
+        title: 'STOP FIRE RECARGA Y MANTENIMIENTO DE EXTINTORES.',
+        description: 'Stop Fire te ofrece la Recarga y mantenimiento de todas las clases de extintores. Manteniendo la calidad, seguridad y responsabilidad en cada servicio ofrecido.',
+        location: 'Solis 1079 - Bahia Blanca',
+        phone: '291 - 154074273',
+        facebook: '@STOP FIRE SERVICIOS',
+        page: '',
+        beneficios: [
+          {
+            number: '10% de descuento',
+            text: 'contado efectivo.',
+          }
+        ],
+        field: 'Otros',
+      },
+      {
+        id: '66',
+        imgSrc: require('../assets/termas-de-luro.jpg'),
+        title: 'TERMAS DE LURO HOTEL & SPA',
+        description: 'EL Complejo Termas de Luro es el Lugar ideal para descansar y desconectarse de todo. A tan solo 400 metros de la ruta 3, el huésped puede utilizar nuestro lugar como descanso en la ruta, o bien puede hospedarse unos días para relajarse y disfrutar de las aguas termales, el paisaje, la playa del rio, con ingreso privado desde el Hotel ; el parador Termal y también el mismo complejo Hotelero, con sus dependencias renovadas , Área de Spa y Bienestar, Masajes y restaurant con comidas caseras, y cerveza artesanal.',
+        location: 'Ruta 3 km 809 Pedro Luro, Pcia. De Buenos Aires - Bahia Blanca',
+        phone: '291 - 6493194',
+        facebook: '@termasdeluro',
+        page: '',
+        beneficios: [
+          {
+            number: '15% de descuento',
+            text: 'contado efectivo en el Hotel.',
+          },
+          {
+            number: '15 % de Descuento',
+            text: 'contado efectivo Acceso a las Termas.'
+          },
+          {
+            number: '10 % de Descuento',
+            text: 'debito o credito.'
+          }
+        ],
+        field: 'Belleza',
       }
     ],
   },

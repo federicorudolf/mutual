@@ -64,7 +64,9 @@ export default {
   .nav-item {
     padding-top: 0;
   }
-
+  .nav-item.item a {
+    pointer-events: none;
+  }
   .navbar-dark .navbar-nav .nav-link {
     color: #000;
   }

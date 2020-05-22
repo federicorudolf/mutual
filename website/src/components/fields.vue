@@ -112,7 +112,7 @@
         <h2>Salud y Belleza</h2>
         <div class="box-image">
           <div class="image">
-            <img class="img-fluid" src="https://i.ytimg.com/vi/lL0jRS18F2E/maxresdefault.jpg" />
+            <img class="img-fluid" src="http://ciudadchicureo.cl/wp-content/uploads/2018/08/21ecf09e-93af-435d-a75e-f66a43d2409f-1080x537.jpg" />
           </div>
           <div class="overlay d-flex align-items-center justify-content-center">
             <div class="overlay_content">
